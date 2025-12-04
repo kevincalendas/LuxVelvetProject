@@ -1,0 +1,125 @@
+body {
+    background: linear-gradient(360deg,rgba(94, 29, 42, 0.8) 0%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.MainDockTop {
+    position: relative;
+    width: 75%;
+    height: 50px;
+    top: 20px;
+    left: 50%;
+    translate: -50% 0;
+    border: 2px solid rgba(94, 29, 42, 0.5);
+    border-radius: 15px;
+    background-color: rgb(163,80, 97, 0.5);
+    box-shadow: 0 0 10px rgb(163,80, 97, 0.8);
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease-out;
+}
+
+.MainDockTop:hover {
+    box-shadow: 0 0 20px rgb(163,80, 97, 0.8);
+    transition: all 0.3s ease-out;
+}
+
+.MainStoreLogo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    translate: 10px -50%;
+    border: 3px solid rgba(143, 143, 143, 0.5);
+    border-radius: 10px;
+    margin-right: 5px;
+
+}
+
+@font-face {
+    font-family: Cursive1;
+    src: url('../Fonts/LemonJellyPersonalUse-dEqR.ttf') format(truetype);
+    font-weight: normal;
+}
+
+.MainTitleDock {
+    opacity: 1;
+    transition: all 0.5s ease-out;
+    position: absolute;
+    top: -28px;
+    left: 75px;
+    font-family: Cursive1;
+    font-size: 45px;
+    color: rgb(99, 51, 59);
+}
+
+.MainSearchProduct {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    translate: 0 -50%;
+    width: 150px;
+    height: 60%;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.MainSearchProduct:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-out;
+}
+
+.SelectionDock1 {
+    position: absolute;
+    top: 50%;
+    right: 440px;
+    translate: 0 -50%;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+}
+.SelectionDock2 {
+    position: absolute;
+    top: 50%;
+    right: 310px;
+    translate: 0 -50%;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+}
+.SelectionDock3 {
+    position: absolute;
+    top: 50%;
+    right: 220px;
+    translate: 0 -50%;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-out;
+}
+
+.SelectionDock1:hover, .SelectionDock2:hover, .SelectionDock3:hover {
+    color: rgba(0, 0, 0, 1);
+    transition: all 0.3s ease-out;
+}
+
+@media (max-width: 800px) {
+    .MainTitleDock {
+        opacity: 0;
+        display: none;
+        transition: all 0.5s ease-out;
+    }
+}

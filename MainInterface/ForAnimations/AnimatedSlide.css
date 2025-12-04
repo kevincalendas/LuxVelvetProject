@@ -1,0 +1,95 @@
+
+.SlideDesc2, .SlideImage2 {
+    opacity: 0;
+    animation: animation-to-left-right1 30s cubic-bezier(0, -0.01, 0, 1) infinite;
+    animation-delay: 1s;
+}
+
+.SlideDesc2, .SlideButton2 {
+    opacity: 0;
+    animation: animation-to-left-right1 30s cubic-bezier(0, -0.01, 0, 1) infinite;
+    animation-delay: 1.1s;
+}
+
+
+.SlideTitle1, .SlideDesc1, .SlideImage1 {
+    opacity: 0;
+    animation: animation-to-left-right2 30s cubic-bezier(0, -0.01, 0, 1) infinite;
+    animation-delay: 1s;
+}
+
+.SlideDesc1, .SlideButton1 {
+    opacity: 0;
+    animation: animation-to-left-right2 30s cubic-bezier(0, -0.01, 0, 1) infinite;
+    animation-delay: 1.1s;
+    text-align: center;
+}
+
+@keyframes animation-to-left-right1 {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    3% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    27%{
+        opacity: 1;
+        transform: translateX(0px);
+        animation-timing-function: ease;
+    }
+
+    30% {
+        opacity: 0;
+        animation-timing-function: ease;
+        transition: all 0.3s ease-out;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animation-to-left-right2 {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+        text-align: center;
+    }
+
+    30% {
+        opacity: 0;
+        transform: translateX(100px);
+        text-align: center;
+    }
+
+    33% {
+        opacity: 1;
+        transform: translateX(0px);
+        animation-timing-function: ease;
+        text-align: center;
+    }
+
+    58% {
+        opacity: 1;
+        transform: translateX(0px);
+        animation-timing-function: ease;
+        text-align: center;
+    }
+
+    60% {
+        opacity: 0; 
+        transform: translateX(-50px);
+        animation-timing-function: ease-out;
+        text-align: center;
+    }
+
+    100% {
+        opacity: 0;
+        text-align: center;
+    }
+}
+
