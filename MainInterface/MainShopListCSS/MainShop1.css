@@ -20,7 +20,7 @@
     position: absolute;
     top: 485px;
     width: 74.5%;
-    height: 275px;
+    height: 300px;
     left: 50%;
     translate: -50%;
     overflow-x: auto;
@@ -40,7 +40,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    left: 10px;
+    left: 20px;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 
@@ -74,10 +74,6 @@
     position: relative;
     width: 200px;
     height: 230px;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    left: 10px;
     scale: 1.05;
 }
 
@@ -94,5 +90,5 @@
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    left: 225px;
+    left: 230px;
 }
