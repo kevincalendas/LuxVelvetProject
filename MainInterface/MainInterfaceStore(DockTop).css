@@ -1,40 +1,8 @@
 body {
-    background: linear-gradient(360deg,rgba(94, 29, 42, 0.8) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(120deg,rgb(179, 95, 151) 0%, rgb(223, 175, 180)50% , rgb(197, 173, 165) 100% );
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
-}
-
-.MainDockTop {
-    position: relative;
-    width: 75%;
-    height: 50px;
-    top: 20px;
-    left: 50%;
-    translate: -50% 0;
-    border: 2px solid rgba(94, 29, 42, 0.5);
-    border-radius: 15px;
-    background-color: rgb(163,80, 97, 0.5);
-    box-shadow: 0 0 10px rgb(163,80, 97, 0.8);
-    backdrop-filter: blur(15px);
-    transition: all 0.3s ease-out;
-}
-
-.MainDockTop:hover {
-    box-shadow: 0 0 20px rgb(163,80, 97, 0.8);
-    transition: all 0.3s ease-out;
-}
-
-.MainStoreLogo {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    translate: 10px -50%;
-    border: 3px solid rgba(143, 143, 143, 0.5);
-    border-radius: 10px;
-    margin-right: 5px;
-
 }
 
 @font-face {
@@ -46,80 +14,119 @@ body {
 .MainTitleDock {
     opacity: 1;
     transition: all 0.5s ease-out;
-    position: absolute;
-    top: -28px;
+    position: fixed;
+    top: -25px;
     left: 75px;
     font-family: Cursive1;
-    font-size: 45px;
-    color: rgb(99, 51, 59);
+    font-weight: 1;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
 }
 
-.MainSearchProduct {
+.searchbar {
     position: absolute;
-    top: 50%;
-    right: 30px;
-    translate: 0 -50%;
-    width: 150px;
-    height: 60%;
-    border: none;
-    border-radius: 15px;
+    top: 10px;
+    left: 50%;
+    translate: -50%;
+    width: 37%;
+    height: 35px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
     font-size: 15px;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.MainSearchProduct:hover {
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-out;
+.searchbar:hover {
+    scale: 1.05;
+    top: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.SelectionDock1 {
-    position: absolute;
-    top: 50%;
-    right: 440px;
-    translate: 0 -50%;
-    font-size: 25px;
+.ButtonDirect1 {
+    position: fixed;
+    top: 60px;
+    left: 35%;
+    font-size: 18px;
+    text-decoration: underline;
     font-family: Arial;
     font-weight: bold;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-out;
-}
-.SelectionDock2 {
-    position: absolute;
-    top: 50%;
-    right: 310px;
-    translate: 0 -50%;
-    font-size: 25px;
-    font-family: Arial;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-out;
-}
-.SelectionDock3 {
-    position: absolute;
-    top: 50%;
-    right: 220px;
-    translate: 0 -50%;
-    font-size: 25px;
-    font-family: Arial;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease-out;
+    color: black;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.SelectionDock1:hover, .SelectionDock2:hover, .SelectionDock3:hover {
-    color: rgba(0, 0, 0, 1);
-    transition: all 0.3s ease-out;
+.ButtonDirect2 {
+    position: fixed;
+    top: 60px;
+    left: 42%;
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-@media (max-width: 800px) {
-    .MainTitleDock {
-        opacity: 0;
-        display: none;
-        transition: all 0.5s ease-out;
-    }
+.ButtonDirect3 {
+    position: fixed;
+    top: 60px;
+    right: 43%;
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ButtonDirect4 {
+    position: fixed;
+    top: 60px;
+    right: 35%;
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.ButtonDirect1:hover, .ButtonDirect2:hover, .ButtonDirect3:hover, .ButtonDirect4:hover {
+    background-color: rgba(255, 255, 255, 0.185);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.301);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.MenuButton1 {
+    position: fixed;
+    width: 60px;
+    height: 50px;
+    right: 10px;
+    top: 13px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.MenuButton1:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.buttonimage1Menu {
+    width: 40px;
+    height: 40px;
+}
+
+.buttonimage1Menu:hover {
+    box-shadow: 0 20px 10pxrgba(0, 0, 0, 0.5);
 }
