@@ -44,44 +44,19 @@
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 
-.ProductList1:hover {
-    position: relative;
-    width: 200px;
-    height: 230px;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    left: 10px;
-    scale: 1.05;
-}
-
-.ProductList2 {
-    position: absolute;
-    top: 10%;
-    width: 200px;
-    height: 200px;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    left: 225px;
-}
-
-.ProductList1:hover .ProductButton1 {
-    opacity: 1;
-}
 
 .ProductImage1 {
     position: absolute;
-    width: 85px;
-    height: 100px;
+    background-size: 200%;
+    width: 100%;
+    height: 200px;
     border: none;
     border-radius: 10px;
-    left: 27%;
 }
 
 .ProductName1 {
     position: absolute;
-    bottom: 10px;
+    top: 10px;
     font-size: 20px;
     font-weight: bold;
     font-family: Arial;
@@ -93,4 +68,31 @@
     width: 90%;
     height: 30px;
     
+}
+
+.ProductList1:hover {
+    position: relative;
+    width: 200px;
+    height: 230px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    left: 10px;
+    scale: 1.05;
+}
+
+.ProductList1:hover .ProductButton1 {
+    opacity: 1;
+}
+
+
+.ProductList2 {
+    position: absolute;
+    top: 10%;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    left: 225px;
 }
