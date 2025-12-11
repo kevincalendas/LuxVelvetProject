@@ -6,6 +6,8 @@ function OpenMainShopWindow() {
     MainBackgroundBlurShop.style.display = "block";
     ProductMainWindow.style.display = "block";
 
+    
+
     setTimeout(() => {
         MainBackgroundBlurShop.style.opacity = "1";
         MainBackgroundBlurShop.style.transition = "all 0.3s ease-out";
