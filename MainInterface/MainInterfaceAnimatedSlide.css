@@ -98,6 +98,13 @@
     }
 }
 
+@media (max-width: 500px) {
+    .SlideImage1, .SlideImage2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 .SlideDesc2 {
     position: absolute;
     top: 90px;
