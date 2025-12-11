@@ -65,6 +65,7 @@
 
 .SlideImage1 {
     position: absolute;
+    display: block;
     right: 100px;
     width: 200px;
     height: 200px;
@@ -91,17 +92,31 @@
     opacity: 0;
 }
 
-@media (max-width: 1000px) {
-    .SlideImage1, .SlideImage2 {
+
+@media (max-width: 1400px) {
+    .SlideImage2 {
+        position: absolute;
+        right: -30px;
+        max-width: 400px;
+        max-height: 200px;
+        min-width: 100px;
+        min-height: 50px;
+        border: none;
+        border-radius: 20px;
+        top: 15%;
         scale: 0.8;
-        right: 20px;
     }
 }
 
-@media (max-width: 500px) {
-    .SlideImage1, .SlideImage2 {
-        opacity: 0;
-        visibility: hidden;
+@media (max-width: 1300px) {
+    .SlideImage2 {
+        visibility: collapse;
+    }
+}
+
+@media (max-width: 900px) {
+    .SlideImage1 {
+        visibility: collapse;
     }
 }
 
@@ -138,7 +153,7 @@
 
 .SlideImage2 {
     position: absolute;
-    right: 60px;
+    right: 70px;
     max-width: 400px;
     max-height: 200px;
     min-width: 100px;

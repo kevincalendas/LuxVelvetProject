@@ -46,7 +46,7 @@
     backdrop-filter: blur(10px);
     border: none;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
 }
 
 .ProductList1:hover .ProductButton1, .ProductList2:hover .ProductButton2, .ProductList3:hover .ProductButton3, .ProductList4:hover .ProductButton4{

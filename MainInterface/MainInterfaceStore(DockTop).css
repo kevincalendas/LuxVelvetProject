@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(120deg,rgb(229 106 179) 0%, rgb(239 135 190)50% , rgb(249 163 203) 100% );
+    background: linear-gradient(120deg,rgb(197, 116, 164) 0%, rgb(239 135 190)50% , rgb(240, 210, 224) 100% );
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -147,4 +147,15 @@ body {
 
 .buttonimage1Menu:hover {
     box-shadow: 0 20px 10pxrgba(0, 0, 0, 0.5);
+}
+
+/* More Option menu CSS */
+ 
+.MoreOptionMenu {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
