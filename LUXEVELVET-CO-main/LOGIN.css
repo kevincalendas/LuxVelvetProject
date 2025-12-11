@@ -192,12 +192,11 @@ body{
         left: 330px;
         }
 
-        .signup{
-        background-color: #f77ebe;
-        width: 300px;
-        height: 30px;
+        .SIGNUP{
+        color: #fa1790;
         position: absolute;
-        top: 550px;
+        top: 600px;
         left: 250px;
+        font-size: 50px;
 
         }
