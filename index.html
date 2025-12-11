@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> LuxVelvet Store </title>
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIKj0jHE8aYwpvb-CsP4R8OxHYlyGC9OpBAw&s">
+
+        <link rel="stylesheet" href="MainInterface/MainInterfaceStore(DockTop).css">
+        <link rel="stylesheet" href="MainInterface/MainInterfaceAnimatedSlide.css">
+        <link rel="stylesheet" href="MainInterface/MainInterfaceMainCSS.css">
+        <link rel="stylesheet" href="MainInterface/MainShopListCSS/MainShop1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+
+        <!-- Main CSS List shops-->
+        <link rel="stylesheet" href="MainInterface/MainShopListCSS/MainShop1.css">
+
+        <!-- for animation css connector-->
+        
+        <link rel="stylesheet" href="MainInterface/ForAnimations/AnimatedSlide.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="MainInterface/MaininterfaceJS/ForShop1.js"></script>
+        <div class="MainDocktop"></div>
+        <div class="scrollablewindow">
+            <h1 class="MainTitleDock"> LuxeVelvet </h1>
+            <input type="text" class="searchbar" placeholder="   🔍">
+            <button type="button" class="MenuButton1" onclick="">
+                <img class="buttonimage1Menu" src="MainInterface/MainInterfaceImages/MoreMenu.png" alt="moremenu">
+            </button> 
+            <div class="MainSlideProducts">
+                <div class="SlideProduct1">
+                    <h1 class="SlideTitle1"> LuxeVelvet <br> Best Seller </h1>
+                    <p class="SlideDesc1"> Get our best sale product!</p>
+                    <button class="SlideButton1">   Get</button>
+                    <img class="SlideImage1" src="https://i.pinimg.com/736x/39/b7/7e/39b77edabc19cee91048e75c027efdf1.jpg">
+                </div>
+                <div class="SlideProduct2">
+                    <h1 class="SlideTitle2"> Different Product Colors! </h1>
+                    <p class="SlideDesc2"> Our product offers a different variation colors!</p>
+                    <button class="SlideButton2">   View Product</button>
+                    <img class="SlideImage2" src="MainInterfaceImages/ForSlides/Slide2Image.png">
+                </div>
+            </div>
+        </div>
+        <div class="MainOptionLists">
+            <button class=""
+        </div>
+        <br>
+        <h1 class="PhoneCases1H1"> Phone Cases </h1>
+        <div class="Shop1PhoneCaseslists">
+            <div class="ProductList1">
+                <img class="ProductImage1" src="https://i.pinimg.com/736x/5b/c3/4d/5bc34d62f81361e91adbfe817c54d736.jpg" alt="ImageofCase">
+                <h1 class="ProductName1">Phone Case</h1>
+                <h1 class="ProductName1A">10k sold</h1>
+                <h1 class="ProductName1B">₱ 120,210.99</h1>
+                <button onclick="OpenMainShopWindow()" class="ProductButton1">View Details</button>
+            </div>
+            <div class="ProductList2">
+                <img class="ProductImage2" src="https://i.pinimg.com/736x/5b/c3/4d/5bc34d62f81361e91adbfe817c54d736.jpg" alt="ImageofCase">
+                <h1 class="ProductName2">Phone Case</h1>
+                <h1 class="ProductName2A">12.5k sold</h1>
+                <h1 class="ProductName2B">₱ 1050.99</h1>
+                <button class="ProductButton2">View Details</button>
+            </div>
+            <div class="ProductList3">
+                <img class="ProductImage3" src="https://i.pinimg.com/736x/5b/c3/4d/5bc34d62f81361e91adbfe817c54d736.jpg" alt="ImageofCase">
+                <h1 class="ProductName3">Phone Case</h1>
+                <h1 class="ProductName3A">10k sold</h1>
+                <h1 class="ProductName3B">₱ 3510.40</h1>
+                <button class="ProductButton3">View Details</button>
+            </div>
+            <div class="ProductList4">
+                <img class="ProductImage4" src="https://i.pinimg.com/736x/5b/c3/4d/5bc34d62f81361e91adbfe817c54d736.jpg" alt="ImageofCase">
+                <h1 class="ProductName4">Phone Case</h1>
+                <h1 class="ProductName4A">10k sold</h1>
+                <h1 class="ProductName4B">₱ 1050.99</h1>
+                <button class="ProductButton4">View Details</button>
+            </div>
+        </div>
+        <div class="MainBackgroundBlurShop" id="MainBackgroundBlurShop">
+            <div class="ProductMainWindow" id="ProductMainWindow">
+                <button onclick="CloseMainShopWindow()" class="ExitProductViewButton"><img src="MainInterface/MainInterfaceIcons/GobackIcon-Black.png" width="35" height="35" style="position: absolute; top: 15%; left: 15%;"></button>
+            </div>
+        </div>
+    </body>
+</html>
