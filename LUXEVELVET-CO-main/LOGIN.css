@@ -191,3 +191,13 @@ body{
         bottom: 180px;
         left: 330px;
         }
+
+        .signup{
+        background-color: #f77ebe;
+        width: 300px;
+        height: 30px;
+        position: absolute;
+        top: 550px;
+        left: 250px;
+
+        }
