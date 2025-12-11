@@ -172,7 +172,7 @@ body{
         }
 
         .image1{
-        border:5px solid rgb(255, 91, 181);
+        border:5px solid rgb(255, 255, 255);
         border-radius: none;
         position:absolute;
         top: 80px;
@@ -181,6 +181,13 @@ body{
         }
 
         .rememberme {
+        position:absolute;
+        bottom: 180px;
+        left: 300px;
+        }
 
-    
+        .me{
+        position: absolute;
+        bottom: 180px;
+        left: 330px;
         }
