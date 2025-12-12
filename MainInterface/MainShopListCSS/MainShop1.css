@@ -37,6 +37,32 @@
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+@media (max-width: 600px) {
+    .Shop1PhoneCaseslists {
+        grid-template-columns: 220px 220px;
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .ProductList1, .ProductList2, .ProductList3, .ProductList4 {
+        width: 200px;
+        height: 275px;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+        border: none;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+
+    }
+
+    .ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover {
+        display: block;
+        height: 310px;
+    }
+
+    
+}
+
 
 /* List of ShopCases 1 */
 .ProductList1, .ProductList2, .ProductList3, .ProductList4 {
@@ -47,6 +73,7 @@
     border: none;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+
 }
 
 .ProductList1:hover .ProductButton1, .ProductList2:hover .ProductButton2, .ProductList3:hover .ProductButton3, .ProductList4:hover .ProductButton4{
@@ -57,7 +84,6 @@
 
 .ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover {
     display: block;
-    scale: 1.05;
     height: 310px;
 }
 
@@ -122,7 +148,7 @@
     height: 100%;
     z-index: 20;
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
     transition: all 0.3s ease-out;
 }
 
@@ -146,8 +172,8 @@
     position: absolute;
     left: 10px;
     top: 10px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     font-family: Arial;
     font-weight: bolder;
     font-size: 20px;
@@ -160,6 +186,17 @@
 .ExitProductViewButton:hover {
     scale: 1.05;
     box-shadow: 0 0 5px rgba(110, 110, 110, 0.5);
+}
+
+@media (max-width: 700px) {
+    .ProductMainWindow {
+        width: 90%;
+        height: 90%;
+    }
+
+    .ExitProductViewButton {
+        scale: 1.5;
+    }
 }
 
 

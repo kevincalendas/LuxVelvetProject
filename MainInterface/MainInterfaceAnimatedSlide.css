@@ -20,7 +20,7 @@
 /* for slides */
 .SlideTitle1 {
     position: fixed;
-    top: 8%;
+    top: 20px;
     left: 100px;
     font-size: 250%;
     font-family: Sans-serif;
@@ -33,7 +33,7 @@
 
 .SlideDesc1 {
     position: fixed;
-    top: 130px;
+    bottom: 110px;
     left: 100px;
     font-size: clamp(10px, 20px, 20px);
     font-family: Sans-serif;
@@ -58,6 +58,21 @@
     background: white;
 }
 
+@media (max-width: 800px) {
+    .SlideTitle1 {
+        top: 5px;
+    }
+    .SlideTitle2 {
+        top: -20px;
+        left: 10px;
+    }
+    .SlideButton1 {
+        bottom: 10px;
+        left: 30px;
+        width: 80%;
+    }
+}
+
 .SlideButton1:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-out;
@@ -79,7 +94,7 @@
 .SlideTitle2 {
     position: absolute;
     top: 20px;
-    left: 5%;
+    left: 50px;
     font-size: 43px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
@@ -123,7 +138,7 @@
 .SlideDesc2 {
     position: absolute;
     top: 90px;
-    left: 5%;
+    left: 50px;
     font-size: clamp(10px, 20px, 20px);
     font-family: Sans-serif;
     font-weight: bolder;
