@@ -234,7 +234,7 @@
 }
 
 .LoadingProductIT1, .LoadingProductIT2, .LoadingProductIT3 {
-    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(209, 209, 209, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(144, 144, 144, 0.5), rgba(0, 0, 0, 0.5));
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(209, 209, 209, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(144, 144, 144, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(144, 144, 144, 0.5), rgba(0, 0, 0, 0.5));
     background-size: 400% 100%;
     animation-name: loadinginfosanimate;
     animation-duration: 2s;
