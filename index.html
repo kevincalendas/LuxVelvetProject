@@ -16,12 +16,16 @@
         <!-- Main CSS List shops-->
         <link rel="stylesheet" href="MainInterface/MainShopListCSS/MainShop1.css">
 
-        <!-- for animation css connector-->
+        <!-- for animation css connector--> 
         
         <link rel="stylesheet" href="MainInterface/ForAnimations/AnimatedSlide.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div class="LoadingIntro">
+            <h1 class="loadingText">LuxVelvet</h1>
+            <p class="loadingTextP">Mixed your style with elegance</p>
+        </div>
         <script src="MainInterface/MaininterfaceJS/ForShop1.js"></script>
         <div class="MainDocktop"></div>
         <div class="scrollablewindow">
@@ -58,14 +62,14 @@
                 <button onclick="OpenMainShopWindow()" class="ProductButton1">View Details</button>
             </div>
             <div class="ProductList2" id="ProductList2">
-                <img class="ProductImage2" src="https://i.pinimg.com/736x/5b/c3/4d/5bc34d62f81361e91adbfe817c54d736.jpg" alt="ImageofCase">
+                <img class="ProductImage2" src="https://i.pinimg.com/1200x/07/3d/8e/073d8e089f34b73915470bd7e580320f.jpg" alt="ImageofCase">
                 <h1 class="ProductName2">Phone Case</h1>
                 <h1 class="ProductName2A">12.5k sold</h1>
                 <h1 class="ProductName2B">₱ 1050.99</h1>
                 <button class="ProductButton2">View Details</button>
             </div>
             <div class="ProductList3" id="ProductList3">
-                <img class="ProductImage3" src="https://i.pinimg.com/736x/5b/c3/4d/5bc34d62f81361e91adbfe817c54d736.jpg" alt="ImageofCase">
+                <img class="ProductImage3" src="https://i.pinimg.com/736x/75/c3/74/75c37496d43d8c6d8dc3e37b8f4e00ae.jpg" alt="ImageofCase">
                 <h1 class="ProductName3">Phone Case</h1>
                 <h1 class="ProductName3A">10k sold</h1>
                 <h1 class="ProductName3B">₱ 3510.40</h1>
@@ -82,7 +86,13 @@
         <div class="MainBackgroundBlurShop" id="MainBackgroundBlurShop">
             <div class="ProductMainWindow" id="ProductMainWindow">
                 <button onclick="CloseMainShopWindow()" class="ExitProductViewButton"><img src="MainInterface/MainInterfaceIcons/GobackIcon-Black.png" width="30" height="30" style="position: absolute; top: 15%; left: 15%;"></button>
+                <div class="LoadingProductInfoPanel">
+                    <div class="LoadingProductIT1"></div>
+                    <div class="LoadingProductIT2"></div>
+                    <div class="LoadingProductIT3"></div>
+                </div>
             </div>
         </div>
+
     </body>
 </html>
