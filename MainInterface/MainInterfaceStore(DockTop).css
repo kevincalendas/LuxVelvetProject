@@ -1,9 +1,12 @@
 body {
-    background: linear-gradient(120deg,rgb(197, 116, 164) 0%, rgb(239 135 190)50% , rgb(240, 210, 224) 100% );
+    background: linear-gradient(rgb(239 135 190));
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
     overflow-y: visible;
+    height: 2000px;
+    scrollbar-color:rgba(255, 255, 255, 0);
+    scrollbar-arrow-color: rgba(185, 0, 185, 0);
 }
 
 @font-face {
