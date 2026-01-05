@@ -42,7 +42,7 @@
     font-weight: bold;
     color: rgba(78, 0, 64, 0.8);
 }
-
+        
 @keyframes fadein {
     0% {
         background-position: 0% 50%;
