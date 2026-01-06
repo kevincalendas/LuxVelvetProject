@@ -40,6 +40,7 @@
     font-size: 21px;
     font-weight: bold;
     text-align: left;
+    scale: 0.5;
     transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
