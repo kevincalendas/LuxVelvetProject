@@ -73,7 +73,7 @@
 }
 
 .MainSlideProducts {
-    position: relative;
+    position: absolute;
     width: 75%;
     height: 300px;
     left: 50%;
