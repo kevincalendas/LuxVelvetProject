@@ -6,11 +6,241 @@
     height: 1000px;
 }
 
+/* Collection Window CSS */
+
+.MainCollectionWindow {
+    position: absolute;
+    top: 815px;
+    width: 75%;
+    height: 400px;
+    left: 50%;
+    translate: -50%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5)0%, rgba(255, 129, 242, 0.5)100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);   
+    z-index: 0;
+}
+
+.MainCollectionWindow:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+    
+.CollectionPreviewIMG1 {
+    position: absolute;
+    bottom: 35px;
+    right: 225px;
+    width: 170px;
+    height: 300px;
+    scale: 1;
+    border-radius: 15px;
+    z-index: 2;
+    transform: rotate(-10deg);
+    filter: drop-shadow(0 0 20px rgba(151, 12, 114, 1));
+    animation: animationCollectionIMGs 10s ease-in-out infinite;
+    animation-delay: 0.7s;
+}
+
+.CollectionPreviewIMG2 {
+    position: absolute;
+    bottom: 40px;
+    right: 150px;
+    width: 170px;
+    height: 300px;
+    scale: 1;
+    border-radius: 15px;
+    z-index: 2;
+    transform: rotateY('45deg');
+    filter: drop-shadow(0 0 20px rgba(200, 111, 176, 1));
+    animation: animationCollectionIMGs 10s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.CollectionPreviewIMG3 {
+    position: absolute;
+    bottom: 35px;
+    right: 50px;
+    width: 170px;
+    height: 295px;
+    scale: 1;
+    border-radius: 15px;
+    z-index: 2;
+    filter: drop-shadow(0 0 20px rgba(200, 111, 176, 1));
+    transform: rotate(5deg);
+}
+
+.CollectionTitleH1 {
+    position: absolute;
+    top: -25px;
+    left: 7%;
+    width: auto;
+    padding-left: 10px;
+    translate: -10%;
+    font-family: Cursive1;
+    font-size: 85px;
+    font-weight: 1px;
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163));
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.545));
+    background-size: 600% 100%;
+    background-clip: text;
+    animation: animationCollectionTitle 10s ease-in-out infinite;
+    z-index: 2;
+}
+
+.CollectionDescP {
+    position: absolute;
+    top: 100px;
+    left: 7%;
+    translate: -10%;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+.CollectionButtonView {
+    position: absolute;
+    bottom: 60px;
+    left: 6%;
+    translate: -9%;
+    width: 300px;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+
+.CollectionButtonView:hover {
+    scale: 1.05;
+    background: linear-gradient(to right, white, white, white, white, white, rgb(255, 131, 241), rgb(255, 147, 242), rgb(255, 193, 247), rgb(255, 131, 241), rgb(255, 147, 242), rgb(255, 232, 252), white);
+    background-size: 300% 200%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    animation: animationCollectionButton 0.6s ease-out forwards;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+@keyframes animationCollectionTitle {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes animationCollectionButton{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Categories Elements CSS */
+
+.Categories {
+    position: absolute;
+    top: 405px;
+    display: block;
+    padding: 20px;
+    row-gap: 30px;
+    width: 72.5%;
+    height: 400px;
+    left: 50%;
+    translate: -50%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.CategoryA {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 400px;
+    width: 49.5%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.MainCategoryA {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.CategoryADesc {
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    font-size: 25px;
+    font-weight: 10;
+    font-family: Arial;
+}
+
+.CategoryAIMG {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    width: 200px;
+    height: 350px;
+}
+
+.DirectCategoryA {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+.CategoryB {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 400px;
+    width: 49.5%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* Main Shops Selection */
 
 .PhoneCases1H1 {
     position: absolute;
-    top: 425px;
+    top: 1214px;
     left: 15%;
     translate: -15%;
     font-family: sans-serif;
@@ -19,7 +249,7 @@
 
 .PhoneCases2H1 {
     position: absolute;
-    top: 855px;
+    top: 1634px;
     left: 15%;
     translate: -15%;
     font-family: sans-serif;
@@ -32,10 +262,10 @@
     overflow-x: auto;
     overflow-y: hidden;
     flex-wrap: nowrap;
-    grid-template-columns: 220px 220px 220px 220px ;
+    grid-template-columns: 220px 220px 220px 220px 220px ;
     row-gap: 30px;
     position: absolute;
-    top: 495px;
+    top: 1290px ;
     width: 72%;
     height: 310px;
     left: 50%;
@@ -62,11 +292,11 @@
     overflow-x: auto;
     overflow-y: hidden;
     flex-wrap: nowrap;
-    grid-template-columns: 220px 220px 220px 220px ;
+    grid-template-columns: 220px 220px 220px 220px 220px ;
     row-gap: 30px;
     position: absolute;
-    top: 925px;
-    width: 72%;
+    top: 1705px;
+    width: 72.5%;
     height: 310px;
     left: 50%;
     translate: -50%;
@@ -102,7 +332,7 @@
         height: auto;
     }
 
-    .ProductList1, .ProductList2, .ProductList3, .ProductList4, .ProductList5, .ProductList6, .ProductList7, .ProductList8 {
+    .ProductList1, .ProductList2, .ProductList3, .ProductList4, .ProductList5, .ProductList6, .ProductList7, .ProductList8, .ProductList9, .ProductList10 {
         width: 200px;
         height: 275px;
         background-color: rgba(255, 255, 255, 0.5);
@@ -113,7 +343,7 @@
 
     }
 
-    .ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover, .ProductList5:hover, .ProductList6:hover, .ProductList7:hover, .ProductList8:hover {
+    .ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover, .ProductList5:hover, .ProductList6:hover, .ProductList7:hover, .ProductList8:hover, .ProductList9:hover, .ProductList10:hover {
         display: block;
         height: 310px;
         
@@ -124,7 +354,7 @@
 
 
 /* List of ShopCases 1 */
-.ProductList1, .ProductList2, .ProductList3, .ProductList4 , .ProductList5, .ProductList6, .ProductList7, .ProductList8 {
+.ProductList1, .ProductList2, .ProductList3, .ProductList4 , .ProductList5, .ProductList6, .ProductList7, .ProductList8, .ProductList9, .ProductList10 {
     width: 200px;
     height: 275px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -135,25 +365,25 @@
 
 }
 
-.ProductList1:hover .ProductButton1, .ProductList2:hover .ProductButton2, .ProductList3:hover .ProductButton3, .ProductList4:hover .ProductButton4, .ProductList5:hover .ProductButton5, .ProductList6:hover .ProductButton6, .ProductList7:hover .ProductButton7, .ProductList8:hover .ProductButton8{
+.ProductList1:hover .ProductButton1, .ProductList2:hover .ProductButton2, .ProductList3:hover .ProductButton3, .ProductList4:hover .ProductButton4, .ProductList5:hover .ProductButton5, .ProductList6:hover .ProductButton6, .ProductList7:hover .ProductButton7, .ProductList8:hover .ProductButton8, .ProductList9:hover .ProductButton9, .ProductList10:hover .ProductButton10 {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
 
 
-.ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover, .ProductList5:hover, .ProductList6:hover, .ProductList7:hover, .ProductList8:hover {
+.ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover, .ProductList5:hover, .ProductList6:hover, .ProductList7:hover, .ProductList8:hover, .ProductList9:hover, .ProductList10:hover {
     display: block;
     height: 310px;
 }
 
 
-.ProductImage1, .ProductImage2, .ProductImage3, .ProductImage4, .ProductImage5, .ProductImage6, .ProductImage7, .ProductImage8 {
+.ProductImage1, .ProductImage2, .ProductImage3, .ProductImage4, .ProductImage5, .ProductImage6, .ProductImage7, .ProductImage8, .ProductImage9, .ProductImage10 {
     position: absolute;
     width: 100%;
     height: 200px;
 }
 
-.ProductName1, .ProductName2, .ProductName3, .ProductName4, .ProductName5, .ProductName6, .ProductName7, .ProductName8 {
+.ProductName1, .ProductName2, .ProductName3, .ProductName4, .ProductName5, .ProductName6, .ProductName7, .ProductName8, .ProductName9, .ProductName10 {
     position: absolute;
     left: 10px;
     top: 198px;
@@ -162,7 +392,7 @@
     font-family: Arial;
 }
 
-.ProductName1A, .ProductName2A, .ProductName3A, .ProductName4A, .ProductName5A, .ProductName6A, .ProductName7A, .ProductName8A {
+.ProductName1A, .ProductName2A, .ProductName3A, .ProductName4A, .ProductName5A, .ProductName6A, .ProductName7A, .ProductName8A, .ProductName9A, .ProductName10A {
     position: absolute;
     left: 10px;
     top: 220px;
@@ -171,7 +401,7 @@
     font-family: Arial;
 }
 
-.ProductName1B, .ProductName2B, .ProductName3B, .ProductName4B, .ProductName5B, .ProductName6B, .ProductName7B, .ProductName8B {
+.ProductName1B, .ProductName2B, .ProductName3B, .ProductName4B, .ProductName5B, .ProductName6B, .ProductName7B, .ProductName8B, .ProductName9B, .ProductName10B {
     position: absolute;
     left: 10px;
     top: 240px;
@@ -181,7 +411,7 @@
     font-family: Arial;
 }
 
-.ProductButton1, .ProductButton2, .ProductButton3, .ProductButton4, .ProductButton5, .ProductButton6, .ProductButton7, .ProductButton8 {
+.ProductButton1, .ProductButton2, .ProductButton3, .ProductButton4, .ProductButton5, .ProductButton6, .ProductButton7, .ProductButton8, .ProductButton9, .ProductButton10 {
     position: absolute;
     bottom: 5px;
     width: 90%;
@@ -327,218 +557,3 @@
     }
 }
 
-/* Collection Window CSS */
-
-.MainCollectionWindow {
-    position: absolute;
-    top: 1300px;
-    width: 74.5%;
-    height: 400px;
-    left: 50%;
-    translate: -50%;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.5)0%, rgba(255, 129, 242, 0.5)100%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);   
-    z-index: 0;
-}
-
-.MainCollectionWindow:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-    
-.CollectionPreviewIMG1 {
-    position: absolute;
-    bottom: 35px;
-    right: 225px;
-    width: 170px;
-    height: 300px;
-    scale: 1;
-    border-radius: 15px;
-    z-index: 2;
-    transform: rotate(-10deg);
-    filter: drop-shadow(0 0 20px rgba(151, 12, 114, 1));
-    animation: animationCollectionIMGs 10s ease-in-out infinite;
-    animation-delay: 0.7s;
-}
-
-.CollectionPreviewIMG2 {
-    position: absolute;
-    bottom: 40px;
-    right: 150px;
-    width: 170px;
-    height: 300px;
-    scale: 1;
-    border-radius: 15px;
-    z-index: 2;
-    transform: rotateY('45deg');
-    filter: drop-shadow(0 0 20px rgba(200, 111, 176, 1));
-    animation: animationCollectionIMGs 10s ease-in-out infinite;
-    animation-delay: 0.5s;
-}
-
-.CollectionPreviewIMG3 {
-    position: absolute;
-    bottom: 35px;
-    right: 50px;
-    width: 170px;
-    height: 295px;
-    scale: 1;
-    border-radius: 15px;
-    z-index: 2;
-    filter: drop-shadow(0 0 20px rgba(200, 111, 176, 1));
-    transform: rotate(5deg);
-}
-
-.CollectionTitleH1 {
-    position: absolute;
-    top: -25px;
-    left: 7%;
-    width: auto;
-    padding-left: 10px;
-    translate: -10%;
-    font-family: Cursive1;
-    font-size: 85px;
-    font-weight: 1px;
-    color: transparent;
-    background-image: linear-gradient(to right, rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163));
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.545));
-    background-size: 600% 100%;
-    background-clip: text;
-    animation: animationCollectionTitle 10s ease-in-out infinite;
-    z-index: 2;
-}
-
-.CollectionDescP {
-    position: absolute;
-    top: 100px;
-    left: 7%;
-    translate: -10%;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
-    z-index: 2;
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
-}
-
-.CollectionButtonView {
-    position: absolute;
-    bottom: 60px;
-    left: 6%;
-    translate: -9%;
-    width: 300px;
-    height: 45px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    z-index: 2;
-}
-
-
-.CollectionButtonView:hover {
-    scale: 1.05;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-@keyframes animationCollectionTitle {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Categories Elements CSS */
-
-.Categories {
-    position: absolute;
-    top: 1725px;
-    display: block;
-    padding: 20px;
-    row-gap: 30px;
-    width: 72.5%;
-    height: 450px;
-    left: 50%;
-    translate: -50%;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.CategoryA {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 400px;
-    width: 660px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.MainCategoryA {
-    position: absolute;
-    top: 10px;
-    left: 40px;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: Arial;
-}
-
-.CategoryADesc {
-    position: absolute;
-    top: 65px;
-    left: 40px;
-    font-size: 25px;
-    font-weight: 10;
-    font-family: Arial;
-}
-
-.CategoryAIMG {
-    position: absolute;
-    top: 25px;
-    right: 50px;
-    width: 200px;
-    height: 350px;
-}
-
-.DirectCategoryA {
-    position: absolute;
-    bottom: 50px;
-    left: 30px;
-    width: 220px;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-    font-weight: bold;
-
-
-}
-.CategoryB {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    height: 400px;
-    width: 660px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
