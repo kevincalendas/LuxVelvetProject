@@ -4,6 +4,7 @@ body {
     background-size:cover;
     background-attachment: fixed;
     overflow-y: visible;
+    overflow-x: hidden;
     height: 2100px;
     scrollbar-color:rgba(255, 255, 255, 0);
     scrollbar-arrow-color: rgba(185, 0, 185, 0);
