@@ -33,11 +33,17 @@
             <h1 class="MainTitleDock"> LuxeVelvet </h1>
             <input type="text" class="searchbar" placeholder="   🔍">
             <button class="note-add-btn" type="button" id="addNoteBtn">+ Note</button>
-            <button type="button" class="MenuButton1" onclick="">
+            <button type="button" class="MenuButton1" onclick="OpenCloseMoreOptions()">
                 <img class="buttonimage1Menu" src="MainInterfaceImages/MoreMenu.png" alt="moremenu">
             </button> 
             <div id="noteContainer" class="note-container"></div>
             </div>
+        </div>
+        <div class="MoreOptionMenuWindow" id="MoreOptionMenuWindow">
+            <button onclick="window.location.href=''" class="OptionMenu1" id="OptionMenu1"> Your Profile </button>
+            <button onclick="window.location.href=''" class="OptionMenu2" id="OptionMenu2"> About LuxVelvet </button>
+            <button onclick="window.location.href=''" class="OptionMenu3" id="OptionMenu3"> Address </button>
+            <button onclick="window.location.href=''" class="OptionMenu4" id="OptionMenu4"> Logout </button>
         </div>
         <div class="MainSlideProducts">
                 <div class="SlideProduct1">
@@ -136,20 +142,25 @@
             <img class="CollectionPreviewIMG1" src="/MainInterface/PhoneCasesImages/CaseCollection1.png">
             <img class="CollectionPreviewIMG2" src="/MainInterface/PhoneCasesImages/CaseCollection2.png">
             <img class="CollectionPreviewIMG3" src="/MainInterface/PhoneCasesImages/CaseCollection3.png">
-            <h1 class="CollectionTitleH1"> LuxVelvet Collections </h1>
-            <p class="CollectionDescP"> Get our Luxurious LuxVelvet Collections </p>
+            <h1 class="CollectionTitleH1"> LuxeVelvet Collections </h1>
+            <p class="CollectionDescP"> Get our Luxurious LuxeVelvet Collections </p>
             <button class="CollectionButtonView"> View LuxVelvet Collections </button>
         </div>
         <div class="Categories">
             <div class="CategoryA">
+                <img class="CategoryA1IMG" src="/MainInterface/MainInterfaceBackgrounds/Background1.jpg" alt="">
                 <h1 class="MainCategoryA"> Phone Cases </h1>
                 <p class="CategoryADesc">Lorem epsum</p>
-                <img class="CategoryAIMG" src="/MainInterface/PhoneCasesImages/CaseCollection1.png" alt="">
+                <img class="CategoryAIMG" src="/MainInterface/PhoneCasesImages/PhoneCasesPreview.png" alt="">
                 <button class="DirectCategoryA"> View Products</button>
             </div>
             <div class="CategoryB">
+                <img class="CategoryA1IMG" src="/MainInterface/MainInterfaceBackgrounds/Background1.jpg" alt="">
                 <h1 class="MainCategoryB"> Phone Charms </h1>
                 <p class="CategoryBDesc">Lorem epsum</p>
+                <img class="CategoryBIMG" src="/MainInterface/PhoneCharmsImages/Charm1.png" alt="">
+                <img class="CategoryB1IMG" src="/MainInterface/PhoneCharmsImages/Charm2.png" alt="">
+                <button class="DirectCategoryB"> View Products</button>
             </div>
 
         </div>

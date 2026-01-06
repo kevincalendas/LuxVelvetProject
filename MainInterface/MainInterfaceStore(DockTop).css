@@ -19,11 +19,12 @@ body {
 .MainDocktop {
     position: fixed;
     width: 100%;
-    height: 95px;
+    height: 100px;
     top: -10px;
     left: 0;
     backdrop-filter: blur(15px);
-    background: linear-gradient(120deg,rgba(229 106 179, 0.3) 0%, rgba(239 135 190, 0.3)50% , rgba(249 163 203, 0.3) 100% );
+    background: linear-gradient(to bottom,rgba(229 106 179, 0.3) 100%, rgba(249 163 203, 0.3) 0% );
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
     border-bottom: 2px solid rgba(255, 255, 255, 0);
     z-index: 1;
 }

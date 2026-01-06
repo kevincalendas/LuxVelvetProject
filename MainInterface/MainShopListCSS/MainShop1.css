@@ -10,7 +10,7 @@
 
 .MainCollectionWindow {
     position: absolute;
-    top: 815px;
+    top: 817px;
     width: 75%;
     height: 400px;
     left: 50%;
@@ -126,7 +126,7 @@
 
 .CollectionButtonView:hover {
     scale: 1.05;
-    background: linear-gradient(to right, white, white, white, white, white, rgb(255, 131, 241), rgb(255, 147, 242), rgb(255, 193, 247), rgb(255, 131, 241), rgb(255, 147, 242), rgb(255, 232, 252), white);
+    background: linear-gradient(to right, white, white, white, white, white, rgb(255, 248, 172), rgb(232, 255, 150), rgb(255, 193, 247), rgb(255, 131, 241), rgb(255, 147, 242), rgb(255, 232, 252), white);
     background-size: 300% 200%;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     animation: animationCollectionButton 0.6s ease-out forwards;
@@ -176,6 +176,7 @@
 }
 
 .CategoryA {
+    overflow: hidden;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -183,7 +184,9 @@
     width: 49.5%;
     border: none;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .MainCategoryA {
@@ -204,12 +207,23 @@
     font-family: Arial;
 }
 
-.CategoryAIMG {
+.CategoryA1IMG {
     position: absolute;
-    top: 25px;
-    right: 50px;
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0)10%, rgba(0, 0, 0, 1) );
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.CategoryAIMG {
+    position: absolute; 
+    bottom: -50px;
+    right: -10px;
     width: 200px;
-    height: 350px;
+    height: 370px;
+    scale: 1.1;
+    transform: rotate(5deg);
 }
 
 .DirectCategoryA {
@@ -223,7 +237,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     font-size: 20px;
     font-weight: bold;
-
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 }
 .CategoryB {
@@ -233,7 +247,73 @@
     height: 400px;
     width: 49.5%;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.MainCategoryB {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.CategoryBDesc {
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    font-size: 25px;
+    font-weight: 10;
+    font-family: Arial;
+}
+
+.CategoryBIMG {
+    position: absolute; 
+    top: -50px;
+    right: -10px;
+    width: 200px;
+    height: 370px;
+    scale: 1.5;
+    transform: rotate(15deg);
+}
+
+.CategoryB1IMG {
+    position: absolute; 
+    top: 30px;
+    right: -50px;
+    width: 200px;
+    height: 370px;
+    scale: 1;
+    transform: rotate(-10deg);
+}
+
+.DirectCategoryB {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.DirectCategoryA:hover, .DirectCategoryB:hover {
+    scale: 1.05;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.CategoryA:hover, .CategoryB:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* Main Shops Selection */
