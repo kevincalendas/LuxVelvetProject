@@ -440,6 +440,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border: none;
+    border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
 
@@ -461,6 +462,8 @@
     position: absolute;
     width: 100%;
     height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .ProductName1, .ProductName2, .ProductName3, .ProductName4, .ProductName5, .ProductName6, .ProductName7, .ProductName8, .ProductName9, .ProductName10 {
@@ -529,8 +532,8 @@
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    width: 75%;
-    height: 85%;
+    width: 1200px;
+    height: 600px;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(124, 124, 124, 0.7);
     border-radius: 15px;
@@ -559,7 +562,8 @@
 
 /* loading product info CSS */
 .LoadingProductInfoPanel {
-    opacity: 1;
+    display: none;
+    opacity: 0;
     scale: 1;
     position: fixed;
     top: 55%;
@@ -637,3 +641,437 @@
     }
 }
 
+/* Main Collection Shop CSS */
+.MainPageCollectionBundle {
+    position: absolute;
+    display: block; /* Hidden by default */
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    left: 50%;
+    top: 2100px;
+    width: 73.5%;
+    height: 1150px;
+
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.BundleTitleH1 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    translate: -50%;
+    font-family: Cursive1;
+    font-size: 70px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163));
+    background-size: 600% 100%; 
+    background-clip: text;  
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.545));
+    animation: animationCollectionTitle 10s ease-in-out infinite;
+    color: transparent;
+}
+
+.BundleDescP {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    translate: -50%;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 80%;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+.ProductList11 {
+    position: absolute;
+    top: 170px;
+    left: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage11 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName11 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName11A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName11B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton11 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+/* Product list 12 */
+
+.ProductList12 {
+    position: absolute;
+    top: 170px;
+    right: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage12 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName12 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName12A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName12B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton12 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Product list 13 */
+
+.ProductList13 {
+    position: absolute;
+    top: 510px;
+    left: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage13 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName13 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName13A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName13B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton13 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Product list 14 */
+
+.ProductList14 {
+    position: absolute;
+    top: 510px;
+    right: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage14 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName14 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName14A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName14B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton14 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Product list 15 */
+
+.ProductList15 {
+    position: absolute;
+    top: 850px;
+    left: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage15 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName15 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName15A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName15B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton15 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProductButton11:hover, .ProductButton12:hover, .ProductButton13:hover, .ProductButton14:hover, .ProductButton15:hover {
+    scale: 1.05;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-out;
+}
+
+@keyframes animationCollectionTitle {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

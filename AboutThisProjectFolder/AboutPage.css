@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgb(239 135 190));
+    background: linear-gradient(85deg, rgb(239 135 190) 0%, rgb(144, 44, 62) 100%);
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
     height: 2200px;
     scrollbar-color:rgba(255, 255, 255, 0);
-    scrollbar-arrow-color: rgba(185, 0, 185, 0);
+    scrollbar-arrow-color: rgba(255, 0, 255, 1);
 }
 
 @font-face {
@@ -113,6 +113,7 @@ body {
     height: 50px;
     right: 10px;
     top: 13px;
+    filter: invert(100%);
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 10px;
@@ -122,6 +123,12 @@ body {
 
 .MenuButton1:hover {
     background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.MenuButton1:active {
+    background-color: rgba(255, 255, 255, 0.7);
+    scale: 0.5;
     border-radius: 10px;
 }
 
@@ -220,6 +227,13 @@ body {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 3.5);
 }
 
+.OptionMenu1:active, .OptionMenu2:active, .OptionMenu3:active, .OptionMenu4:active {
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 3.5);
+}
+
 @keyframes MainOpenAnims {
     0% {
         transform: translateY(-130px);
@@ -286,39 +300,45 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Arial;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     color: white;
     opacity: 0;
-    animation: AnimationIntroInTitle 2s ease-in forwards;
+    animation: AnimationIntroInTitle 2.4s ease-in-out forwards;
     z-index: 1001;
 }
 
 @keyframes AnimationIntroInTitle {
     0% {
-        font-size: 50px;
-        top: 50%;
+        filter: blur(5px);
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         opacity: 0;
     }
+
     25% {
-        font-size: 50px;
-        top: 50%;
+        filter: blur(0px);
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         opacity: 1;
-    }
-    65% {
-        font-size: 50px;
-        top: 50%;
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     }
 
-    85% {
+    50% {
+        filter: blur(0px);
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         opacity: 1;
-        font-size: 25px;
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.05);
     }
-    100% {
-        font-size: 30px;
-        top: 2.1%;
-        opacity: 1;
+
+    65% {
+        filter: blur(5px);
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
     }
 }
+

@@ -58,34 +58,96 @@ function OpenCloseMoreOptions() {
     }
 }
 
-function OpenMainShopWindow() {
+function OpenMainShopWindow1() {
     const MainBackgroundBlurShop = document.getElementById('MainBackgroundBlurShop');
     const ProductMainWindow = document.getElementById('ProductMainWindow');
+    const ProductLoadingScreen = document.getElementById('LoadingProductInfoPanel');
+    const ProductPanel1 = document.getElementById('MainPanelProductInfo1');
     MainBackgroundBlurShop.style.display = "block";
     ProductMainWindow.style.display = "block";
-
+    ProductLoadingScreen.style.display = "block";
     
 
     setTimeout(() => {
+        ProductLoadingScreen.style.opacity = "1";
+        ProductLoadingScreen.style.transition = "all 0.3s ease-out";
         MainBackgroundBlurShop.style.opacity = "1";
         MainBackgroundBlurShop.style.transition = "all 0.3s ease-out";
         ProductMainWindow.style.opacity = "1";
         ProductMainWindow.style.scale = "1";
-        ProductMainWindow.style.transition = "all 0.3s cubic-bezier(0,-0.08,0,1)";
+        ProductMainWindow.style.transition = "all 0.3s cubic-bezier(0,-0.08,0,1)";  
+        ProductPanel1.style.display = "block";
     }, 100);
+
+    setTimeout(() => {
+            ProductLoadingScreen.style.opacity = "0";
+            ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+            ProductPanel1.style.display = "block";
+            ProductPanel1.style.transition = "all 0.3s ease-out";
+            ProductPanel1.style.opacity = "1";
+    }, 1500); 
+    
+    setTimeout(() => {
+            ProductPanel1.style.transition = "all 0.3s ease-out";
+            ProductPanel1.style.opacity = "1";
+    }, 1600); 
+}
+
+function OpenMainShopWindow2() {
+    const MainBackgroundBlurShop = document.getElementById('MainBackgroundBlurShop');
+    const ProductMainWindow = document.getElementById('ProductMainWindow');
+    const ProductLoadingScreen = document.getElementById('LoadingProductInfoPanel');
+    const ProductPanel2 = document.getElementById('MainPanelProductInfo2');
+    MainBackgroundBlurShop.style.display = "block";
+    ProductMainWindow.style.display = "block";
+    ProductLoadingScreen.style.display = "block";
+    
+
+    setTimeout(() => {
+        ProductLoadingScreen.style.opacity = "1";
+        ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+        MainBackgroundBlurShop.style.opacity = "1";
+        MainBackgroundBlurShop.style.transition = "all 0.3s ease-out";
+        ProductMainWindow.style.opacity = "1";
+        ProductMainWindow.style.scale = "1";
+        ProductMainWindow.style.transition = "all 0.3s cubic-bezier(0,-0.08,0,1)";  
+        ProductPanel2.style.display = "block";
+    }, 100);
+
+    setTimeout(() => {
+            ProductLoadingScreen.style.opacity = "0";
+            ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+            ProductPanel2.style.display = "block";
+            ProductPanel2.style.transition = "all 0.3s ease-out";
+            ProductPanel2.style.opacity = "1";
+    }, 1500); 
+    
+    setTimeout(() => {
+            ProductPanel2.style.transition = "all 0.3s ease-out";
+            ProductPanel2.style.opacity = "1";
+    }, 1600); 
 }
 
 function CloseMainShopWindow() {
     const MainBackgroundBlurShop = document.getElementById('MainBackgroundBlurShop');
     const ProductMainWindow = document.getElementById('ProductMainWindow');
+    const ProductPanel1 = document.getElementById('MainPanelProductInfo1');
+    const ProductPanel2 = document.getElementById('MainPanelProductInfo2');
         MainBackgroundBlurShop.style.opacity = "0";
         MainBackgroundBlurShop.style.transition = "all 0.3s ease-out";
         ProductMainWindow.style.opacity = "0";
         ProductMainWindow.style.scale = "0.6";
         ProductMainWindow.style.transition = "all 0.3s cubic-bezier(0,-0.08,0,1)";
-
+        ProductPanel1.style.opacity = "0";
+        ProductPanel1.style.transition = "all 0.3s ease-out";
+        ProductPanel2.style.opacity = "0";
+        ProductPanel2.style.transition = "all 0.3s ease-out";
+        ProductPanel1.style.display = "none";
+        ProductPanel2.style.display = "none";
     setTimeout(() => {
         MainBackgroundBlurShop.style.display = "none";
         ProductMainWindow.style.display = "none";
+        ProductPanel1.style.display = "none";
+        ProductPanel2.style.display = "none";
     }, 400);
 }

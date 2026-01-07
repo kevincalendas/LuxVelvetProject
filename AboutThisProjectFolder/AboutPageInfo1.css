@@ -1,0 +1,787 @@
+.Info1mainPanel {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 450px;
+    background-color: none;
+}
+
+.Info1TitleImage {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 550px;
+    height: 85%;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.Info1Title {
+    position: absolute;
+    top: 10px;
+    left: 590px;
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.Info1Desc {
+    position: absolute;
+    top: 90px;
+    left: 590px;
+    width: 600px;
+    font-size: 18px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.7s;
+}
+
+/* Info 2 section */
+
+.Info2mainPanel {
+    position: absolute;
+    top: 580px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 1020px;
+    background-color: none;
+    scale: 1;
+}
+
+.Info2TitleImage {
+    position: absolute;
+    right: 50px;
+    bottom: 120px;
+    height: 300px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    filter: invert(100%);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.8s;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.Info2TitleImage:hover {
+    filter: invert(80%);
+    scale: 1.1;
+    transform: rotate(25deg);
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.Info2TitleImage:active {
+    filter: invert(50%);
+    scale: 0.9;
+    transform: rotate(0deg);
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.Info2Title {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.9s;
+}
+
+.Info2ASubtitle {
+    position: absolute;
+    bottom: 430px;
+    left: 20px;
+    font-size: 28px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGorightAnimation 0.5s ease forwards;
+    animation-delay: 2.0s;
+}
+
+.Info2ADesc {
+    position: absolute;
+    bottom: 360px;
+    left: 20px;
+    width: 45%;
+    font-size: 18px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGorightAnimation 0.5s ease forwards;
+    animation-delay: 2.1s;
+}
+
+.Info3ASubtitle {
+    position: absolute;
+    bottom: 310px;
+    left: 20px;
+    font-size: 28px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGorightAnimation 0.5s ease forwards;
+    animation-delay: 2.2s;
+}
+
+.Info3ADesc {
+    position: absolute;
+    bottom: 240px;
+    left: 20px;
+    width: 30%;
+    font-size: 18px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGorightAnimation 0.5s ease forwards;
+    animation-delay: 2.3s;
+} 
+
+.Info4ASubtitle {
+    position: absolute;
+    bottom: 190px;
+    left: 20px;
+    font-size: 28px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGorightAnimation 0.5s ease forwards;
+    animation-delay: 2.4s;
+}
+
+.Info4ADesc {
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    width: 30%;
+    font-size: 18px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGorightAnimation 0.5s ease forwards;
+    animation-delay: 2.5s;
+}
+
+.Info5ASubtitle {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    font-size: 28px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGorightAnimation 0.5s ease forwards;
+    animation-delay: 2.6s;
+}
+
+.Info5ADesc {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 30%;
+    font-size: 18px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGorightAnimation 0.5s ease forwards;
+    animation-delay: 2.7s;
+
+}
+
+.InfoMain1H {
+    position: absolute;
+    top: 150px;
+    left: 190px;
+    width: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.9s;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.InfoMain1Desc {
+    position: absolute;
+    top: 220px;
+    left: 170px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.0s;
+}
+
+.InfoMain2H {
+    position: absolute;
+    top: 150px;
+    right: 190px;
+    width: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.9s;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.InfoMain2Desc {
+    position: absolute;
+    top: 220px;
+    right: -85px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.0s;
+}
+
+.InfoMain3H {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    width: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.1s;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.InfoMain3Desc {
+    position: absolute;
+    top: 420px;
+    left: 200px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.2s;
+}
+
+.InfoMain4H {
+    position: absolute;
+    top: 350px;
+    right: 130px;
+    width: auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.1s;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.InfoMain4Desc {
+    position: absolute;
+    top: 420px;
+    right: -140px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.2s;
+
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 3.5);
+}
+
+.InfoMain1H:hover, .InfoMain2H:hover, .InfoMain3H:hover, .InfoMain4H:hover {
+    text-shadow: 0 0 50px rgba(64, 0, 91, 1);
+    background: linear-gradient(270deg, #ff00ff, #00ffff, #ff00ff);
+    background-size: 600% 600%;
+    background-clip: text;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.InfoMain1H:active, .InfoMain2H:active, .InfoMain3H:active, .InfoMain4H:active {
+    text-shadow: 0 0 50px rgba(64, 0, 91, 1);
+    scale: 0.7;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes textcoloranimation {
+    0% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
+}
+
+/* About Info 3 Section */
+
+.Info3mainPanel {
+    position: absolute;
+    top: 1560px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 600px;
+    background-color: none;
+}
+
+.Info3ImagePanel {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    right: 1.5%;
+    top: 50px;
+    width: 95%;
+    height: 85%;
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.8s;
+}
+
+.Info3TitleImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+}
+
+.Info3Title {
+    position: absolute;
+    top: 65px;
+    left: 120px;
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+
+}
+
+.Info3Desc {
+    position: absolute;
+    top: 85px;
+    left: 80px;
+    width: 960px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+}
+
+/* Info 4 Section */
+
+.Info4MainPanel {
+    position: absolute;
+    top: 620px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1450px;
+    height: 1600px;
+    background-color: none;
+}
+
+.Info4Title {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2s;
+}
+
+.Info4DeveloperProfileImage1 {
+    position: absolute;
+    top: 125px;
+    left: 150px;
+    width: 250px;
+    height: 250px;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    background-color: rgb(255, 220, 226);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.1s;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+.Info4DeveloperProfileImage2 {
+    position: absolute;
+    top: 125px;
+    right: 150px;
+    width: 250px;
+    height: 250px;
+    border: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    background-color: rgb(255, 213, 221);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.1s;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.Info4DeveloperProfileImage1:hover, .Info4DeveloperProfileImage2:hover {
+    filter: brightness(90%);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1);
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.Info4DeveloperProfileImage1:active, .Info4DeveloperProfileImage2:active {
+    filter: brightness(80%);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    scale: 0.9;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.DeveloperName1 {
+    position: absolute;
+    top: 390px;
+    left: 110px;
+    width: auto;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.2s;
+}
+
+.DeveloperName2 {
+    position: absolute;
+    top: 390px;
+    right: 110px;
+    width: auto;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.2s;
+}
+
+.Info4DeveloperDesc1 {
+    position: absolute;
+    top: 440px;
+    left: 190px;
+    width: 350px;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.3s;
+}
+
+.Info4DeveloperDesc2 {
+    position: absolute;
+    top: 440px;
+    right: 15px;
+    width: 350px;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 1.5;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.3s;
+}
+
+.DeveloperContribute1 {
+    position: absolute;
+    top: 490px;
+    left: 140px;
+    width: 400px;
+    font-size: 21px;
+    font-family: Arial;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    text-align: justify;
+    line-height: 2.0;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.5s;
+}
+
+.DeveloperContribute2 {
+    position: absolute;
+    top: 490px;
+    right: 140px;
+    width: 400px;
+    font-size: 21px;
+    font-family: Arial;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 1);
+    text-align: right;
+    line-height: 2.0;
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.5s;
+}
+
+.Info4DeveloperIcon1A {
+    position: absolute;
+    top: 710px;
+    left: 200px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    filter: invert(100%);
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.6s;
+}
+
+.Info4DeveloperIcon1B {
+    position: absolute;
+    top: 710px;
+    right: 200px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    filter: invert(100%);
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.6s;
+}
+
+.Info4DeveloperIcon2A {
+    position: absolute;
+    top: 990px;
+    left: 200px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    filter: invert(100%);
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.7s;
+}
+
+.Info4DeveloperIcon2B {
+    position: absolute;
+    top: 990px;
+    right: 200px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    filter: invert(100%);
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.7s;
+}
+
+.Info4DeveloperIcon3A {
+    position: absolute;
+    top: 1300px;
+    left: 200px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    filter: invert(100%);
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.8s;
+}
+
+.Info4DeveloperIcon3B {
+    position: absolute;
+    top: 1300px;
+    right: 200px;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    filter: invert(100%);
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.8s;
+}
+
+.DeveloperHTMLAH1 {
+    position: absolute;
+    top: 850px;
+    left: 230px;
+    width: auto;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.7s;
+}
+
+.DeveloperHTMLBH1 {
+    position: absolute;
+    top: 850px;
+    right: 220px;
+    width: auto;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.7s;
+}
+
+.DeveloperHTMLAH2 {
+    position: absolute;
+    top: 1140px;
+    left: 230px;
+    width: auto;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.7s;
+}
+
+.DeveloperHTMLBH2 {
+    position: absolute;
+    top: 1140px;
+    right: 220px;
+    width: auto;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.7s;
+}
+
+.DeveloperHTMLAH3 {
+    position: absolute;
+    top: 1450px;
+    left: 230px;
+    width: auto;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.7s;
+}
+
+.DeveloperHTMLBH3 {
+    position: absolute;
+    top: 1450px;
+    right: 220px;
+    width: auto;
+    font-size: 50px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    animation: FadeInGoUPAnimation 0.5s ease forwards;
+    animation-delay: 2.7s;
+}
+
+
+@keyframes FadeInGoUPAnimation {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes FadeInGorightAnimation {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

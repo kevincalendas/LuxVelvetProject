@@ -1,0 +1,209 @@
+/* Product 1 CSS */
+
+.MainPanelProductInfo1 {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+}
+
+.MainProductImage1 {
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.MainProductName1 {
+    position: fixed;
+    top: 50px;
+    left: 400px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial;
+    opacity: 1;
+}
+
+.MainProductName1A {
+    position: fixed;
+    top: 110px;
+    left: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: lighter;
+    opacity: 1;
+}
+
+.MainProductPrice1B {
+    position: fixed;
+    top: 150px;
+    left: 400px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(72, 0, 70);
+    font-family: sans-serif;
+    opacity: 1;
+}
+
+.MainProductDescription1 {
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    width: 750px;
+    height: 200px;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 1.5;
+    color: rgb(50, 50, 50);
+    opacity: 1;
+}
+
+.MainProductButton1A {
+    position: fixed;
+    bottom: 50px;
+    left: 400px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(68, 1, 57, 0.5);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    opacity: 1;
+}
+
+
+.MainProductButton1B {
+    position: fixed;
+    bottom: 50px;
+    left: 620px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(68, 1, 57, 0.5);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    opacity: 1;
+}
+
+.MainProductButton1A:hover, .MainProductButton1B:hover {
+    background-color: rgba(68, 1, 57, 0.8);
+    transition: all 0.3s ease-out;
+}
+
+.MainProductButton1A:active, .MainProductButton1B:active {
+    background-color: rgba(68, 1, 57, 0.8);
+    scale: 0.8;
+    transition: all 0.3s ease-out;
+}
+
+/*Product info 2 CSS */
+
+.MainPanelProductInfo2 {
+    display: none;
+    opacity: 0;
+}
+
+.MainProductImage2 {
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+
+}
+
+.MainProductName2 {
+    position: fixed;
+    top: 50px;
+    left: 400px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.MainProductName2A {
+    position: fixed;
+    top: 110px;
+    left: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: lighter;
+}
+
+.MainProductPrice2B {
+    position: fixed;
+    top: 150px;
+    left: 400px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(72, 0, 70);
+    font-family: sans-serif;
+}
+
+.MainProductDescription2 {
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    width: 750px;
+    height: 200px;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 1.5;
+    color: rgb(50, 50, 50);
+}
+
+.MainProductButton2A {
+    position: fixed;
+    bottom: 50px;
+    left: 400px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(68, 1, 57, 0.5);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+
+.MainProductButton2B {
+    position: fixed;
+    bottom: 50px;
+    left: 620px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(68, 1, 57, 0.5);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.MainProductButton2A:hover, .MainProductButton2B:hover {
+    background-color: rgba(68, 1, 57, 0.8);
+    transition: all 0.3s ease-out;
+}
+
+.MainProductButton2A:active, .MainProductButton2B:active {
+    background-color: rgba(68, 1, 57, 0.8);
+    scale: 0.8;
+    transition: all 0.3s ease-out;
+}
