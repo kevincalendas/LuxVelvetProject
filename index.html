@@ -23,8 +23,10 @@
     </head>
     <body>
         <div class="LoadingIntro">
-            <h1 class="loadingText">LuxeVelvet</h1>
-            <p class="loadingTextP">Mixed your style with elegance</p>
+            <div class="LoadingInfoPanel">
+                <h1 class="loadingText">LuxeVelvet</h1>
+                <p class="loadingTextP">Mixed your style with elegance</p>
+            </div>
         </div>
         <script src="MainInterface/MaininterfaceJS/ForShop1.js"></script>
         <script src="MainInterface/MaininterfaceJS/ParralaxEffect.js"></script>
@@ -32,7 +34,6 @@
         <div class="scrollablewindow">
             <h1 class="MainTitleDock"> LuxeVelvet </h1>
             <input type="text" class="searchbar" placeholder="   🔍">
-            <button class="note-add-btn" type="button" id="addNoteBtn">+ Note</button>
             <button type="button" class="MenuButton1" onclick="OpenCloseMoreOptions()">
                 <img class="buttonimage1Menu" src="MainInterfaceImages/MoreMenu.png" alt="moremenu">
             </button> 
@@ -41,7 +42,7 @@
         </div>
         <div class="MoreOptionMenuWindow" id="MoreOptionMenuWindow">
             <button onclick="window.location.href=''" class="OptionMenu1" id="OptionMenu1"> Your Profile </button>
-            <button onclick="window.location.href=''" class="OptionMenu2" id="OptionMenu2"> About LuxVelvet </button>
+            <button onclick="window.location.href='AboutThisProjectFolder/AboutPage.html'" class="OptionMenu2" id="OptionMenu2"> About LuxVelvet </button>
             <button onclick="window.location.href=''" class="OptionMenu3" id="OptionMenu3"> Address </button>
             <button onclick="window.location.href='/LUXEVELVET-CO-main/LOG-IN.html'" class="OptionMenu4" id="OptionMenu4"> Logout </button>
         </div>
@@ -55,7 +56,7 @@
                 <div class="SlideProduct2">
                     <h1 class="SlideTitle2"> Different Product Colors! </h1>
                     <p class="SlideDesc2"> Our product offers a different variation colors!</p>
-                    <button class="SlideButton2">   View Product</button>
+                    <button class="SlideButton2" onclick="OpenMainShopWindow()"">   View Product</button>
                     <img class="SlideImage2" src="MainInterfaceImages/ForSlides/Slide2Image.png">
                 </div>
         </div>
