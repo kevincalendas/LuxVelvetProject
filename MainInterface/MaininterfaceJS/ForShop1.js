@@ -128,6 +128,41 @@ function OpenMainShopWindow2() {
     }, 1600); 
 }
 
+function OpenMainShopWindow6() {
+    const MainBackgroundBlurShop = document.getElementById('MainBackgroundBlurShop');
+    const ProductMainWindow = document.getElementById('ProductMainWindow');
+    const ProductLoadingScreen = document.getElementById('LoadingProductInfoPanel');
+    const ProductPanel6 = document.getElementById('MainPanelProductInfo2');
+    MainBackgroundBlurShop.style.display = "block";
+    ProductMainWindow.style.display = "block";
+    ProductLoadingScreen.style.display = "block";
+    
+
+    setTimeout(() => {
+        ProductLoadingScreen.style.opacity = "1";
+        ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+        MainBackgroundBlurShop.style.opacity = "1";
+        MainBackgroundBlurShop.style.transition = "all 0.3s ease-out";
+        ProductMainWindow.style.opacity = "1";
+        ProductMainWindow.style.scale = "1";
+        ProductMainWindow.style.transition = "all 0.3s cubic-bezier(0,-0.08,0,1)";  
+        ProductPanel6.style.display = "block";
+    }, 100);
+
+    setTimeout(() => {
+            ProductLoadingScreen.style.opacity = "0";
+            ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+            ProductPanel6.style.display = "block";
+            ProductPanel6.style.transition = "all 0.3s ease-out";
+            ProductPanel6.style.opacity = "1";
+    }, 1500); 
+    
+    setTimeout(() => {
+            ProductPanel6.style.transition = "all 0.3s ease-out";
+            ProductPanel6.style.opacity = "1";
+    }, 1600); 
+}
+
 function CloseMainShopWindow() {
     const MainBackgroundBlurShop = document.getElementById('MainBackgroundBlurShop');
     const ProductMainWindow = document.getElementById('ProductMainWindow');
