@@ -128,6 +128,112 @@ function OpenMainShopWindow2() {
     }, 1600); 
 }
 
+function OpenMainShopWindow3() {
+    const MainBackgroundBlurShop = document.getElementById('MainBackgroundBlurShop');
+    const ProductMainWindow = document.getElementById('ProductMainWindow');
+    const ProductLoadingScreen = document.getElementById('LoadingProductInfoPanel');
+    const ProductPanel3 = document.getElementById('MainPanelProductInfo3');
+    MainBackgroundBlurShop.style.display = "block";
+    ProductMainWindow.style.display = "block";
+    ProductLoadingScreen.style.display = "block";
+    
+
+    setTimeout(() => {
+        ProductLoadingScreen.style.opacity = "1";
+        ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+        MainBackgroundBlurShop.style.opacity = "1";
+        MainBackgroundBlurShop.style.transition = "all 0.3s ease-out";
+        ProductMainWindow.style.opacity = "1";
+        ProductMainWindow.style.scale = "1";
+        ProductMainWindow.style.transition = "all 0.3s cubic-bezier(0,-0.08,0,1)";  
+        ProductPanel3.style.display = "block";
+    }, 100);
+
+    setTimeout(() => {
+            ProductLoadingScreen.style.opacity = "0";
+            ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+            ProductPanel3.style.display = "block";
+            ProductPanel3.style.transition = "all 0.3s ease-out";
+            ProductPanel3.style.opacity = "1";
+    }, 500); 
+    
+    setTimeout(() => {
+            ProductPanel3.style.transition = "all 0.3s ease-out";
+            ProductPanel3.style.opacity = "1";
+    }, 500); 
+}
+
+function OpenMainShopWindow4() {
+    const MainBackgroundBlurShop = document.getElementById('MainBackgroundBlurShop');
+    const ProductMainWindow = document.getElementById('ProductMainWindow');
+    const ProductLoadingScreen = document.getElementById('LoadingProductInfoPanel');
+    const ProductPanel4 = document.getElementById('MainPanelProductInfo4');
+    MainBackgroundBlurShop.style.display = "block";
+    ProductMainWindow.style.display = "block";
+    ProductLoadingScreen.style.display = "block";
+    
+
+    setTimeout(() => {
+        ProductLoadingScreen.style.opacity = "1";
+        ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+        MainBackgroundBlurShop.style.opacity = "1";
+        MainBackgroundBlurShop.style.transition = "all 0.3s ease-out";
+        ProductMainWindow.style.opacity = "1";
+        ProductMainWindow.style.scale = "1";
+        ProductMainWindow.style.transition = "all 0.3s cubic-bezier(0,-0.08,0,1)";  
+        ProductPanel4.style.display = "block";
+    }, 100);
+
+    setTimeout(() => {
+            ProductLoadingScreen.style.opacity = "0";
+            ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+            ProductPanel4.style.display = "block";
+            ProductPanel4.style.transition = "all 0.3s ease-out";
+            ProductPanel4.style.opacity = "1";
+    }, 500); 
+    
+    setTimeout(() => {
+            ProductPanel4.style.transition = "all 0.3s ease-out";
+            ProductPanel4.style.opacity = "1";
+    }, 500); 
+}
+
+function OpenMainShopWindow5() {
+    const MainBackgroundBlurShop = document.getElementById('MainBackgroundBlurShop');
+    const ProductMainWindow = document.getElementById('ProductMainWindow');
+    const ProductLoadingScreen = document.getElementById('LoadingProductInfoPanel');
+    const ProductPanel5 = document.getElementById('MainPanelProductInfo5');
+    MainBackgroundBlurShop.style.display = "block";
+    ProductMainWindow.style.display = "block";
+    ProductLoadingScreen.style.display = "block";
+    
+
+    setTimeout(() => {
+        ProductLoadingScreen.style.opacity = "1";
+        ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+        MainBackgroundBlurShop.style.opacity = "1";
+        MainBackgroundBlurShop.style.transition = "all 0.3s ease-out";
+        ProductMainWindow.style.opacity = "1";
+        ProductMainWindow.style.scale = "1";
+        ProductMainWindow.style.transition = "all 0.3s cubic-bezier(0,-0.08,0,1)";  
+        ProductPanel5.style.display = "block";
+    }, 100);
+
+    setTimeout(() => {
+            ProductLoadingScreen.style.opacity = "0";
+            ProductLoadingScreen.style.transition = "all 0.3s ease-out";
+            ProductPanel5.style.display = "block";
+            ProductPanel5.style.transition = "all 0.3s ease-out";
+            ProductPanel5.style.opacity = "1";
+    }, 500); 
+    
+    setTimeout(() => {
+            ProductPanel5.style.transition = "all 0.3s ease-out";
+            ProductPanel5.style.opacity = "1";
+    }, 500); 
+}
+
+
 function OpenMainShopWindow6() {
     const MainBackgroundBlurShop = document.getElementById('MainBackgroundBlurShop');
     const ProductMainWindow = document.getElementById('ProductMainWindow');
@@ -485,6 +591,9 @@ function CloseMainShopWindow() {
     const ProductMainWindow = document.getElementById('ProductMainWindow');
     const ProductPanel1 = document.getElementById('MainPanelProductInfo1');
     const ProductPanel2 = document.getElementById('MainPanelProductInfo2');
+    const ProductPanel3 = document.getElementById('MainPanelProductInfo3');
+    const ProductPanel4 = document.getElementById('MainPanelProductInfo4');
+    const ProductPanel5 = document.getElementById('MainPanelProductInfo5');
 
     const ProductPanel6 = document.getElementById('MainPanelProductInfo6');
     const ProductPanel7 = document.getElementById('MainPanelProductInfo7');
@@ -503,6 +612,9 @@ function CloseMainShopWindow() {
         ProductMainWindow.style.transition = "all 0.3s cubic-bezier(0,-0.08,0,1)";
         ProductPanel1.style.opacity = "0";
         ProductPanel2.style.opacity = "0";
+        ProductPanel3.style.opacity = "0";
+        ProductPanel4.style.opacity = "0";
+        ProductPanel5.style.opacity = "0";
         ProductPanel6.style.opacity = "0";
         ProductPanel7.style.opacity = "0";
         ProductPanel8.style.opacity = "0";
@@ -542,6 +654,9 @@ function CloseMainShopWindow() {
         ProductMainWindow.style.display = "none";
         ProductPanel1.style.display = "none";
         ProductPanel2.style.display = "none";
+         ProductPanel3.style.display = "none";
+        ProductPanel4.style.display = "none";
+        ProductPanel5.style.display = "none";
         ProductPanel6.style.display = "none";
         ProductPanel7.style.display = "none";
         ProductPanel8.style.display = "none";
