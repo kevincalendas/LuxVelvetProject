@@ -1094,3 +1094,37 @@
         background-position: 0% 50%;
     }
 }
+
+/* Notification notice */
+
+.NotificationPlacedWindow {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    translate: -50%;
+    width: 650px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 1001;
+}
+
+.NotificationPlacedH1 {
+    position: absolute;
+    top: 5px;
+    left:50px;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.NotificationPlacedP {
+    position: absolute;
+    top: 60px;
+    left:50px;
+    font-family: Arial;
+    font-size: 20px;
+    color: black;
+}

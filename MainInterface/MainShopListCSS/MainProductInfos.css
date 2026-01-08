@@ -208,34 +208,88 @@
     transition: all 0.3s ease-out;
 }
 
-.MainPanelProductInfo6, .MainPanelProductInfo7, .MainPanelProductInfo8, .MainPanelProductInfo9, .MainPanelProductInfo10 {
-
+.MainPanelProductInfo6, .MainPanelProductInfo7, .MainPanelProductInfo8, .MainPanelProductInfo9, .MainPanelProductInfo10, .MainPanelProductInfo11, .MainPanelProductInfo12, .MainPanelProductInfo13, .MainPanelProductInfo14, .MainPanelProductInfo15 {
+    display: none;
+    opacity: 0;
 }
 
-.MainProductImage6, .MainProductImage7, .MainProductImage8, .MainProductImage9, .MainProductImage10 {
-
+.MainProductImage6, .MainProductImage7, .MainProductImage8, .MainProductImage9, .MainProductImage10, .MainProductImage11, .MainProductImage12, .MainProductImage13, .MainProductImage14, .MainProductImage15 {
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
 }
 
-.MainProductName6, .MainProductName7, .MainProductName8, .MainProductName9, .MainProductName10 {
-
+.MainProductName6, .MainProductName7, .MainProductName8, .MainProductName9, .MainProductName10, .MainProductName11, .MainProductName12, .MainProductName13, .MainProductName14, .MainProductName15 {
+    position: fixed;
+    top: 50px;
+    left: 400px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial;
 }
 
-.MainProductName6A, .MainProductName7A, .MainProductName8A, .MainProductName9A, .MainProductName10A {
-
+.MainProductName6A, .MainProductName7A, .MainProductName8A, .MainProductName9A, .MainProductName10A, .MainProductName11A, .MainProductName12A, .MainProductName13A, .MainProductName14A, .MainProductName15A {
+    position: fixed;
+    top: 110px;
+    left: 400px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: lighter;
 }
 
-.MainProductName6B, .MainProductName7B, .MainProductName8B, .MainProductName9B, .MainProductName10B {
-
+.MainProductPrice6B, .MainProductPrice7B, .MainProductPrice8B, .MainProductPrice9B, .MainProductPrice10B, .MainProductPrice11B, .MainProductPrice12B, .MainProductPrice13B, .MainProductPrice14B, .MainProductPrice15B {
+    position: fixed;
+    top: 150px;
+    left: 400px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(72, 0, 70);
+    font-family: sans-serif;
 }
 
-.MainProductDescription6, .MainProductDescription7, .MainProductDescription8, .MainProductDescription9, .MainProductDescription10 {
-
+.MainProductDescription6, .MainProductDescription7, .MainProductDescription8, .MainProductDescription9, .MainProductDescription10, .MainProductDescription11, .MainProductDescription12, .MainProductDescription13, .MainProductDescription14, .MainProductDescription15 {
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    width: 750px;
+    height: 200px;
+    font-size: 18px;
+    font-family: Arial;
+    line-height: 1.5;
+    color: rgb(50, 50, 50);
 }
 
-.MainProductButton6A, .MainProductButton7A, .MainProductButton8A, .MainProductButton9A, .MainProductButton10A {
-
+.MainProductButton6A, .MainProductButton7A, .MainProductButton8A, .MainProductButton9A, .MainProductButton10A, .MainProductButton11A, .MainProductButton12A, .MainProductButton13A, .MainProductButton14A, .MainProductButton15A {
+    position: fixed;
+    bottom: 50px;
+    left: 400px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(68, 1, 57, 0.5);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
 }
 
-.MainProductButton6B, .MainProductButton7A, .MainProductButton8A, .MainProductButton9A, .MainProductButton10A {
-
+.MainProductButton6B, .MainProductButton7B, .MainProductButton8B, .MainProductButton9B, .MainProductButton10B, .MainProductButton11B, .MainProductButton12B, .MainProductButton13B, .MainProductButton14B, .MainProductButton15B {
+    position: fixed;
+    bottom: 50px;
+    left: 620px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(68, 1, 57, 0.5);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
 }
