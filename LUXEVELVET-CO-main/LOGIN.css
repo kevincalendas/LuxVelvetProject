@@ -60,12 +60,14 @@ body{
 
             }
 
+
+
          .username {
         margin: 50px;
         position:absolute;
         bottom: 50%; 
-        right: 25%;
-         font-size: 35px;   
+        right: 30%;
+         font-size: 40px;   
          width: 350px;
          height: 30px;   
         }
@@ -75,7 +77,7 @@ body{
         position:absolute;
         bottom: 30%;
         right: 26%;
-        font-size: 35px;
+        font-size: 40px;
 
         }
 
@@ -151,19 +153,20 @@ body{
         }
 
         .user {
-        height: 25px;
-        width: 200px;
+        height: 35px;
+        width: 220px;
         position:absolute;
         top: 2px;
-        right:-20px;
+        right:-70px;
+        bottom: 50px;
         }
 
         .pass {
-        height: 25px;
-        width: 200px;
+        height: 35px;
+        width: 220px;
         position: absolute;
         right: -30px;
-        bottom: 3px;
+        bottom: 5px;
         }
 
         .password {
@@ -189,21 +192,22 @@ body{
 
         .rememberme {
         position:absolute;
-        bottom: 180px;
-        left: 300px;
+        bottom: 187px;
+        left: 350px;
         }
 
         .me{
         position: absolute;
         bottom: 180px;
-        left: 330px;
+        left: 380px;
+        font-size: 30px;
         }
 
         .SIGNUP{
         color: #fa1790;
         position: absolute;
-        top: 600px;
-        left: 250px;
-        font-size: 50px;
-
+        top: 550px;
+        left: 399px;
+        font-size: 25px;
+        
         }
