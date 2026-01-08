@@ -747,12 +747,12 @@ function CloseBuyedWindow() {
 
         NotificationPlacedWindow.style.top = "20px";
         NotificationPlacedWindow.style.opacity = "1";
-        NotificationPlacedWindow.style.transition = "all 0.5s ease-out";
+        NotificationPlacedWindow.style.transition = "all 0.3s ease-out";
 
         setTimeout(() => {
             NotificationPlacedWindow.style.top = "-100px";
             NotificationPlacedWindow.style.opacity = "0";
-            NotificationPlacedWindow.style.transition = "all 0.5s ease-in";
+            NotificationPlacedWindow.style.transition = "all 0.3s ease-in";
         }, 2000);
     }, 400);
 }
