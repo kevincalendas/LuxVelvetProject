@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.E.M Crochet Craft Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="EM.css">
+</head>
+<body>
+    <div id="login-screen">
+        <div class="login-box">
+            <h1>P.E.M Craft</h1>
+            <p style="margin-bottom: 25px; opacity: 0.6; font-size: 13px;">Welcome to our Artisan Boutique</p>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()" class="btn-action" style="width:100%; margin-top:10px;">ENTER SHOP</button>
+            <p id="error-msg" style="color:red; font-size:12px; margin-top:10px; display:none;">Please enter both fields to continue.</p>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <header>
+            <h2 style="color:var(--primary); letter-spacing: 2px;">P.E.M Craft Crochet Shop 🧶</h2>
+            <div style="display:flex; align-items:center; gap:20px;">
+                <span id="user-display" style="font-size: 11px; opacity: 0.5; font-weight: bold;"></span>
+                <div onclick="toggleTheme()" style="cursor:pointer; font-size:18px;" title="Switch the Vibe">🌓</div>
+            </div>
+        </header>
+
+        <div class="container">
+            <section style="display:flex; align-items:center; gap:50px; padding:60px 0; flex-wrap:wrap;">
+                <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&q=80&w=800" style="width:400px; height:400px; border-radius:40px; object-fit:cover; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                <div style="flex:1; min-width: 300px;">
+                    <p style="color:var(--primary); font-weight:bold; letter-spacing:2px; font-size: 12px;">ARTISAN MADE</p>
+                    <h1 style="font-size: 48px; margin: 10px 0; line-height: 1.1;">Handmade with Every Stitch.</h1>
+                    <p style="opacity: 0.7; margin-bottom: 30px; font-size: 18px;">Browse our latest collections and artisan-grade milk cotton creations. Crafted with love, one loop at a time.</p>
+                    <button class="btn-action" style="padding: 15px 35px;" onclick="scrollToStore()">Explore Collection</button>
+                </div>
+            </section>
+
+            <div class="category-tabs" id="shop-section">
+                <button class="tab active" onclick="filterItems('All', this)">All Treats</button>
+                <button class="tab" onclick="filterItems('Plushies', this)">Plushies</button>
+                <button class="tab" onclick="filterItems('Clothes', this)">Clothes</button>
+                <button class="tab" onclick="filterItems('Keychain', this)">Keychains</button>
+                <button class="tab" onclick="filterItems('Flowers', this)">Flowers</button>
+            </div>
+            <div class="products" id="product-list"></div>
+        </div>
+
+        <section class="newsletter-section">
+            <h2>Stay in the Loop! 📬</h2>
+            <p>Subscribe to get early access to new patterns and drops.</p>
+            <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap; margin-top:20px;">
+                <input type="email" placeholder="your@email.com" class="news-input">
+                <button class="btn-action" style="background:#000;" onclick="alert('Subscription saved! ✨')">Join Now</button>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <h4 style="color:var(--primary); margin-bottom: 15px;">Our Story</h4>
+                <p style="font-size: 14px; opacity: 0.8;">P.E.M Craft proceeds fund our college tuition. Every stitch is a step toward our academic goals.</p>
+            </div>
+            <div style="text-align:right;">
+                <p style="color:var(--primary); font-weight:bold; cursor:pointer;" onclick="location.reload()">Sign Out</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="chat-trigger" onclick="toggleChat()">💬</div>
+    <button id="cart-btn" onclick="toggleCart(true)">👜 BAG (<span id="count">0</span>)</button>
+
+    <div id="receipt-modal">
+        <div class="receipt-card">
+            <h1 style="color:var(--primary)">Order Logged! 💖</h1>
+            <p style="margin: 20px 0; opacity: 0.8;">The artisan has received your request.</p>
+            <button class="btn-action" style="width:100%" onclick="closeReceipt()">Back to Shop</button>
+        </div>
+    </div>
+
+    <div id="cart-modal" onclick="toggleCart(false)">
+        <div class="cart-window" onclick="event.stopPropagation()">
+            <h2>Your Bag</h2>
+            <div id="cart-content" style="flex:1; overflow-y:auto; margin-top:20px;"></div>
+            <div style="border-top:1px solid var(--border); padding-top:20px;">
+                <h3 style="display:flex; justify-content:space-between; margin-bottom: 20px;">Total: <span id="total-val" style="color:var(--primary)">₱0</span></h3>
+                <button onclick="checkout()" class="btn-action" style="width:100%">PROCESS ORDER</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="em.js"></script>
+</body>
+</html>

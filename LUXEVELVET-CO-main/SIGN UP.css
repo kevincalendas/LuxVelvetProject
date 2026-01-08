@@ -1,0 +1,158 @@
+body{
+                background-image: url('https://img.freepik.com/premium-photo/gradient-blur-red-abstract-background_667461-807.jpg');
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+}
+
+.signup {
+
+background-color: rgb(255, 198, 224);
+width: 40%;
+height: 70%;
+position: fixed;
+left: 50%;
+bottom: 10%;
+translate: -50% 0;
+border-radius: 20px;
+padding: 50px 30px;
+
+}
+
+.upper {
+font-size: 50px;
+position: absolute;
+bottom: 520px;
+left: 250px;
+
+}
+
+@font-face {
+                font-family: lemonjelly;
+                src: url('LemonJellyPersonalUse-dEqR.ttf') format(truetype);
+                font-weight:normal;
+
+            }
+
+
+.lower {
+position: absolute;
+top: 140px;
+left: 360px;
+
+}
+
+.Fullname {
+position:absolute;
+top: 250px;
+font-size: 30px;
+left: 180px;
+}
+
+.fullnamee {
+height: 30px;
+position: absolute;
+top: 10px;
+left: 170px;
+width: 300px;
+}
+
+.EmailAddress {
+position:absolute;
+bottom: 300px;
+font-size: 30px;
+left: 235px;
+}
+
+.Emailaddress {
+height: 30px;
+position: absolute;
+top: 10px;
+left: 114px;
+width: 300px;
+}
+
+.Username {
+position:absolute;
+top: 330px;
+font-size: 30px;
+left: 180px;
+}
+
+.username {
+    height: 30px;
+position: absolute;
+top: 10px;
+left: 170px;
+width: 300px;
+
+}
+
+.Password {
+position:absolute;
+bottom: 220px;
+font-size: 30px;
+left: 190px;
+}
+
+.password {
+height: 30px;
+position: absolute;
+top: 10px;
+left: 160px;
+width: 300px;
+}
+
+.ConfirmPassword {
+position:absolute;
+bottom: 140px;
+font-size: 30px;
+left: 80px;
+}
+
+.confirmmpassword {
+height: 30px;
+position: absolute;
+top: 5px;
+left: 270px;
+width: 300px;
+}
+
+.SignUp :hover {
+background-color:#f77ebe; color: white;
+box-shadow:0 8px 16px 0 rgb(245, 111, 162)
+}
+
+.SignUp {
+            background-color:#ffaedb;
+            border: 3px solid rgb(255, 255, 255);
+            cursor: context-menu;
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position:absolute;
+            bottom: 50px;
+            right: 360px;   
+            transition: all 0.3s ease-out;
+            height: 50px;
+            width: 200px;  
+            box-shadow:0 8px 16px 0 rgb(245, 111, 162, 0.5)
+            
+}
+
+.inputty::placeholder{
+            display: block;
+            width: 50vw;
+            padding: 0 1.25rem;
+        }
+
+        .SIGNIN {
+            color: #fa1790;
+        position: absolute;
+        top: 550px;
+        left: 399px;
+        font-size: 25px;
+        }
