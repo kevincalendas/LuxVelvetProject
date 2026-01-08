@@ -6,35 +6,403 @@
     height: 1000px;
 }
 
+/* Collection Window CSS */
+
+.MainCollectionWindow {
+    position: absolute;
+    top: 817px;
+    width: 75%;
+    height: 400px;
+    left: 50%;
+    translate: -50%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5)0%, rgba(255, 129, 242, 0.5)100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);   
+    z-index: 0;
+}
+
+.MainCollectionWindow:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+    
+.CollectionPreviewIMG1 {
+    position: absolute;
+    bottom: 35px;
+    right: 225px;
+    width: 170px;
+    height: 300px;
+    scale: 1;
+    border-radius: 15px;
+    z-index: 2;
+    transform: rotate(-10deg);
+    filter: drop-shadow(0 0 20px rgba(151, 12, 114, 1));
+    animation: animationCollectionIMGs 10s ease-in-out infinite;
+    animation-delay: 0.7s;
+}
+
+.CollectionPreviewIMG2 {
+    position: absolute;
+    bottom: 40px;
+    right: 150px;
+    width: 170px;
+    height: 300px;
+    scale: 1;
+    border-radius: 15px;
+    z-index: 2;
+    transform: rotateY('45deg');
+    filter: drop-shadow(0 0 20px rgba(200, 111, 176, 1));
+    animation: animationCollectionIMGs 10s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.CollectionPreviewIMG3 {
+    position: absolute;
+    bottom: 35px;
+    right: 50px;
+    width: 170px;
+    height: 295px;
+    scale: 1;
+    border-radius: 15px;
+    z-index: 2;
+    filter: drop-shadow(0 0 20px rgba(200, 111, 176, 1));
+    transform: rotate(5deg);
+}
+
+.CollectionTitleH1 {
+    position: absolute;
+    top: -25px;
+    left: 7%;
+    width: auto;
+    padding-left: 10px;
+    translate: -10%;
+    font-family: Cursive1;
+    font-size: 85px;
+    font-weight: 1px;
+    color: transparent;
+    background-image: linear-gradient(to right, rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163));
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.545));
+    background-size: 600% 100%;
+    background-clip: text;
+    animation: animationCollectionTitle 10s ease-in-out infinite;
+    z-index: 2;
+}
+
+.CollectionDescP {
+    position: absolute;
+    top: 100px;
+    left: 7%;
+    translate: -10%;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+.CollectionButtonView {
+    position: absolute;
+    bottom: 60px;
+    left: 6%;
+    translate: -9%;
+    width: 300px;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+}
+
+
+.CollectionButtonView:hover {
+    scale: 1.05;
+    background: linear-gradient(to right, white, white, white, white, white, rgb(255, 248, 172), rgb(232, 255, 150), rgb(255, 193, 247), rgb(255, 131, 241), rgb(255, 147, 242), rgb(255, 232, 252), white);
+    background-size: 300% 200%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    animation: animationCollectionButton 0.6s ease-out forwards;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+@keyframes animationCollectionTitle {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes animationCollectionButton{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Categories Elements CSS */
+
+.Categories {
+    position: absolute;
+    top: 405px;
+    display: block;
+    padding: 20px;
+    row-gap: 30px;
+    width: 72.5%;
+    height: 400px;
+    left: 50%;
+    translate: -50%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.CategoryA {
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 400px;
+    width: 49.5%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.MainCategoryA {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.CategoryADesc {
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    font-size: 25px;
+    font-weight: 10;
+    font-family: Arial;
+}
+
+.CategoryA1IMG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0)10%, rgba(0, 0, 0, 1) );
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.CategoryAIMG {
+    position: absolute; 
+    bottom: -50px;
+    right: -10px;
+    width: 200px;
+    height: 370px;
+    scale: 1.1;
+    transform: rotate(5deg);
+}
+
+.DirectCategoryA {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.CategoryB {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 400px;
+    width: 49.5%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.MainCategoryB {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.CategoryBDesc {
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    font-size: 25px;
+    font-weight: 10;
+    font-family: Arial;
+}
+
+.CategoryBIMG {
+    position: absolute; 
+    top: -50px;
+    right: -10px;
+    width: 200px;
+    height: 370px;
+    scale: 1.5;
+    transform: rotate(15deg);
+}
+
+.CategoryB1IMG {
+    position: absolute; 
+    top: 30px;
+    right: -50px;
+    width: 200px;
+    height: 370px;
+    scale: 1;
+    transform: rotate(-10deg);
+}
+
+.DirectCategoryB {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.DirectCategoryA:hover, .DirectCategoryB:hover {
+    scale: 1.05;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.CategoryA:hover, .CategoryB:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 /* Main Shops Selection */
 
 .PhoneCases1H1 {
     position: absolute;
-    top: 415px;
-    left: 50%;
+    top: 1214px;
+    left: 15%;
+    translate: -15%;
     font-family: sans-serif;
     font-weight: bold;
-    translate: -50%;
+}
+
+.PhoneCases2H1 {
+    position: absolute;
+    top: 1634px;
+    left: 15%;
+    translate: -15%;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .Shop1PhoneCaseslists {
     display: grid;
     padding: 20px;
     overflow-x: auto;
+    overflow-y: hidden;
     flex-wrap: nowrap;
-    grid-template-columns: 220px 220px 220px 220px ;
+    grid-template-columns: 220px 220px 220px 220px 220px ;
     row-gap: 30px;
     position: absolute;
-    top: 485px;
-    width: 75%;
-    height: 315px;
+    top: 1290px ;
+    width: 72%;
+    height: 310px;
     left: 50%;
     translate: -50%;
     overflow-x: auto;
     border: none;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.5);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    scrollbar-color: rgb(114, 86, 90) rgba(255, 255, 255, 0);
+    scrollbar-arrow-color: rgba(110, 110, 110, 0);
+    filter: blur(0px);
+
+    animation: FadeOutScrollAnims 1s ease-in-out;
+    animation-timeline: --page-scroll;
+    animation-range: entry 400px containment 700px;
+}
+
+
+.Shop2PhoneCaseslists {
+    display: grid;
+    padding: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    grid-template-columns: 220px 220px 220px 220px 220px ;
+    row-gap: 30px;
+    position: absolute;
+    top: 1705px;
+    width: 72.5%;
+    height: 310px;
+    left: 50%;
+    translate: -50%;
+    overflow-x: auto;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    scrollbar-color: rgb(114, 86, 90) rgba(255, 255, 255, 0);
+    scrollbar-arrow-color: rgba(110, 110, 110, 0);
+    filter: blur(0px);
+}
+
+@keyframes FadeOutScrollAnims {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+        filter: blur(10px);
+    }
 }
 
 @media (max-width: 600px) {
@@ -44,7 +412,7 @@
         height: auto;
     }
 
-    .ProductList1, .ProductList2, .ProductList3, .ProductList4 {
+    .ProductList1, .ProductList2, .ProductList3, .ProductList4, .ProductList5, .ProductList6, .ProductList7, .ProductList8, .ProductList9, .ProductList10 {
         width: 200px;
         height: 275px;
         background-color: rgba(255, 255, 255, 0.5);
@@ -55,9 +423,10 @@
 
     }
 
-    .ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover {
+    .ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover, .ProductList5:hover, .ProductList6:hover, .ProductList7:hover, .ProductList8:hover, .ProductList9:hover, .ProductList10:hover {
         display: block;
         height: 310px;
+        
     }
 
     
@@ -65,36 +434,39 @@
 
 
 /* List of ShopCases 1 */
-.ProductList1, .ProductList2, .ProductList3, .ProductList4 {
+.ProductList1, .ProductList2, .ProductList3, .ProductList4 , .ProductList5, .ProductList6, .ProductList7, .ProductList8, .ProductList9, .ProductList10 {
     width: 200px;
     height: 275px;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border: none;
+    border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
 
 }
 
-.ProductList1:hover .ProductButton1, .ProductList2:hover .ProductButton2, .ProductList3:hover .ProductButton3, .ProductList4:hover .ProductButton4{
+.ProductList1:hover .ProductButton1, .ProductList2:hover .ProductButton2, .ProductList3:hover .ProductButton3, .ProductList4:hover .ProductButton4, .ProductList5:hover .ProductButton5, .ProductList6:hover .ProductButton6, .ProductList7:hover .ProductButton7, .ProductList8:hover .ProductButton8, .ProductList9:hover .ProductButton9, .ProductList10:hover .ProductButton10 {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
 
 
-.ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover {
+.ProductList1:hover, .ProductList2:hover, .ProductList3:hover, .ProductList4:hover, .ProductList5:hover, .ProductList6:hover, .ProductList7:hover, .ProductList8:hover, .ProductList9:hover, .ProductList10:hover {
     display: block;
     height: 310px;
 }
 
 
-.ProductImage1, .ProductImage2, .ProductImage3, .ProductImage4 {
+.ProductImage1, .ProductImage2, .ProductImage3, .ProductImage4, .ProductImage5, .ProductImage6, .ProductImage7, .ProductImage8, .ProductImage9, .ProductImage10 {
     position: absolute;
     width: 100%;
     height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.ProductName1, .ProductName2, .ProductName3, .ProductName4 {
+.ProductName1, .ProductName2, .ProductName3, .ProductName4, .ProductName5, .ProductName6, .ProductName7, .ProductName8, .ProductName9, .ProductName10 {
     position: absolute;
     left: 10px;
     top: 198px;
@@ -103,7 +475,7 @@
     font-family: Arial;
 }
 
-.ProductName1A, .ProductName2A, .ProductName3A, .ProductName4A {
+.ProductName1A, .ProductName2A, .ProductName3A, .ProductName4A, .ProductName5A, .ProductName6A, .ProductName7A, .ProductName8A, .ProductName9A, .ProductName10A {
     position: absolute;
     left: 10px;
     top: 220px;
@@ -112,7 +484,7 @@
     font-family: Arial;
 }
 
-.ProductName1B, .ProductName2B, .ProductName3B, .ProductName4B {
+.ProductName1B, .ProductName2B, .ProductName3B, .ProductName4B, .ProductName5B, .ProductName6B, .ProductName7B, .ProductName8B, .ProductName9B, .ProductName10B {
     position: absolute;
     left: 10px;
     top: 240px;
@@ -122,7 +494,7 @@
     font-family: Arial;
 }
 
-.ProductButton1, .ProductButton2, .ProductButton3, .ProductButton4 {
+.ProductButton1, .ProductButton2, .ProductButton3, .ProductButton4, .ProductButton5, .ProductButton6, .ProductButton7, .ProductButton8, .ProductButton9, .ProductButton10 {
     position: absolute;
     bottom: 5px;
     width: 90%;
@@ -138,8 +510,8 @@
 /* Main Shop 1 Window */
 
 .MainBackgroundBlurShop {
-    display: block;
-    opacity: 1;
+    display: none;
+    opacity: 0;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -147,21 +519,21 @@
     width: 100%;
     height: 100%;
     z-index: 20;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
     transition: all 0.3s ease-out;
 }
 
 .ProductMainWindow {
-    display: block;
-    opacity: 1;
-    scale: 1;
+    display: none;
+    opacity: 0;
+    scale: 0.5;
     position: fixed;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    width: 50%;
-    height: 70%;
+    width: 1200px;
+    height: 600px;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(124, 124, 124, 0.7);
     border-radius: 15px;
@@ -188,6 +560,76 @@
     box-shadow: 0 0 5px rgba(110, 110, 110, 0.5);
 }
 
+/* loading product info CSS */
+.LoadingProductInfoPanel {
+    display: none;
+    opacity: 0;
+    scale: 1;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 90%;
+    background-color: none;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.LoadingProductIT1 {
+    position: fixed;
+    left: 3%;
+    top: 5%;
+    width: 30%;
+    height: 90%;
+    border: none;
+    border-radius: 7px;
+}
+
+.LoadingProductIT2 {
+    position: fixed;
+    left: 35%;
+    top: 5%;
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+}
+
+.LoadingProductIT3 {
+    position: fixed;
+    left: 35%;
+    top: 15%;
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+}
+
+.LoadingProductIT1, .LoadingProductIT2, .LoadingProductIT3 {
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(209, 209, 209, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(144, 144, 144, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(144, 144, 144, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: 400% 100%;
+    animation-name: loadinginfosanimate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loadinginfosanimate {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+        animation-timing-function: ease-in-out;
+    }
+
+    100% {
+        background-position: 0% 50%;
+        animation-timing-function: ease-in-out;
+    }
+}
+
 @media (max-width: 700px) {
     .ProductMainWindow {
         width: 90%;
@@ -199,4 +641,437 @@
     }
 }
 
+/* Main Collection Shop CSS */
+.MainPageCollectionBundle {
+    position: absolute;
+    display: block; /* Hidden by default */
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    left: 50%;
+    top: 2100px;
+    width: 73.5%;
+    height: 1150px;
 
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.BundleTitleH1 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    translate: -50%;
+    font-family: Cursive1;
+    font-size: 70px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163), rgb(255, 0, 238), rgb(250, 255, 163));
+    background-size: 600% 100%; 
+    background-clip: text;  
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.545));
+    animation: animationCollectionTitle 10s ease-in-out infinite;
+    color: transparent;
+}
+
+.BundleDescP {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    translate: -50%;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 80%;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+}
+
+.ProductList11 {
+    position: absolute;
+    top: 170px;
+    left: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage11 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName11 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName11A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName11B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton11 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+/* Product list 12 */
+
+.ProductList12 {
+    position: absolute;
+    top: 170px;
+    right: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage12 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName12 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName12A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName12B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton12 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Product list 13 */
+
+.ProductList13 {
+    position: absolute;
+    top: 510px;
+    left: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage13 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName13 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName13A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName13B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton13 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Product list 14 */
+
+.ProductList14 {
+    position: absolute;
+    top: 510px;
+    right: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage14 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName14 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName14A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName14B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton14 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Product list 15 */
+
+.ProductList15 {
+    position: absolute;
+    top: 850px;
+    left: 70px;
+    width: 550px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35);
+}
+
+.ProductImage15 {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40%;
+    height: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.ProductName15 {
+    position: absolute;
+    top: 15px;
+    left: 310px;
+    translate: -50%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductName15A {
+    position: absolute;
+    top: 60px;
+    left: 335px;
+    text-align: left;
+    translate: -50%;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial;
+}
+
+.ProductName15B {
+    position: absolute;
+    top: 90px;
+    left: 290px;
+    text-align: left;
+    translate: -50%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.ProductButton15 {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProductButton11:hover, .ProductButton12:hover, .ProductButton13:hover, .ProductButton14:hover, .ProductButton15:hover {
+    scale: 1.05;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-out;
+}
+
+@keyframes animationCollectionTitle {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

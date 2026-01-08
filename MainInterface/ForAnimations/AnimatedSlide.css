@@ -1,73 +1,100 @@
 
 .SlideDesc2, .SlideImage2 {
+    display: block;
     opacity: 0;
     animation: animation-to-left-right1 30s cubic-bezier(0, -0.01, 0, 1) infinite;
     animation-fill-mode: both;
     animation-delay: 1s;
+    scale: 1;
+    z-index: 1;
 }
 
 .SlideDesc2, .SlideButton2 {
+    display: block;
     opacity: 0;
     animation: animation-to-left-right1 30s cubic-bezier(0, -0.01, 0, 1) infinite;
     animation-fill-mode: both;
     animation-delay: 1.1s;
+    scale: 1;
+    z-index: 1;
 }
 
 
 .SlideTitle1, .SlideDesc1, .SlideImage1 {
+    display: block;
     opacity: 0;
     animation: animation-to-left-right2 30s cubic-bezier(0, -0.01, 0, 1) infinite;
     animation-fill-mode: both;
     animation-delay: 1s;
+    scale: 1;
+    z-index: 1;
 }
 
 .SlideDesc1, .SlideButton1 {
+    display: block;
     opacity: 0;
     animation: animation-to-left-right2 30s cubic-bezier(0, -0.01, 0, 1) infinite;
     animation-fill-mode: both;
     animation-delay: 1.1s;
     text-align: center;
+    scale: 1;
+    z-index: 1;
 }
 
 @keyframes animation-to-left-right1 {
     0%{
+        scale: 1;
+        display: block;
         opacity: 0;
         transform: translateX(100px);
+        z-index: 1;
     }
 
     3% {
+        scale: 1;
         opacity: 1;
         transform: translateX(0px);
+        z-index: 1;
     }
 
     27%{
         opacity: 1;
         transform: translateX(0px);
         animation-timing-function: ease;
+        z-index: 1;
     }
 
     30% {
         opacity: 0;
+        scale: 1;
         animation-timing-function: ease;
         transition: all 0.3s ease-out;
+        z-index: 0;
     }
 
     100% {
         opacity: 0;
+        display: none;
+        scale: 0;
+        z-index: 0;
     }
 }
 
 @keyframes animation-to-left-right2 {
     0%{
+        scale: 1;
         opacity: 0;
         transform: translateX(100px);
         text-align: center;
+        display: block;
+        z-index: 0;
     }
 
     30% {
         opacity: 0;
         transform: translateX(100px);
         text-align: center;
+        z-index: 0;
     }
 
     33% {
@@ -75,6 +102,7 @@
         transform: translateX(0px);
         animation-timing-function: ease;
         text-align: center;
+        z-index: 1;
     }
 
     58% {
@@ -82,6 +110,7 @@
         transform: translateX(0px);
         animation-timing-function: ease;
         text-align: center;
+        z-index: 1;
     }
 
     60% {
@@ -89,11 +118,16 @@
         transform: translateX(-50px);
         animation-timing-function: ease-out;
         text-align: center;
+        scale: 1;
+        z-index: 1;
     }
 
     100% {
         opacity: 0;
         text-align: center;
+        display: none;
+        scale: 0;
+        z-index: 0;
     }
 }
 

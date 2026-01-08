@@ -1,3 +1,109 @@
-.MainOptionLists {
-    
+#MoreOptionMenuWindow {
+    position: fixed;
+    display: none; /* Hidden by default */
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    right: 10px;
+    top: 70px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 45px;
+    z-index: 2;
+}
+
+.is-open {
+    animation: MainOpenAnims 0.7s ease forwards;
+}
+
+.is-close {
+    animation: MainCloseAnims 0.7s ease forwards;
+}
+
+.OptionMenu1.is-close, .OptionMenu2.is-close, .OptionMenu3.is-close, .OptionMenu4.is-close {
+    animation: FadeOut 0.3s ease-out;
+    animation-fill-mode: both;
+}
+
+
+
+.OptionMenu1, .OptionMenu2, .OptionMenu3, .OptionMenu4 {
+    opacity: 0;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: left;
+    scale: 0.5;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.OptionMenu1:hover, .OptionMenu2:hover, .OptionMenu3:hover, .OptionMenu4:hover {
+    font-size: 23px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 3.5);
+}
+
+@keyframes MainOpenAnims {
+    0% {
+        transform: translateY(-130px);
+        scale: 0.5;
+        width: 50px;
+        height: 50px;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    32% {
+        transform: translate(-50px, 50px);
+        scale: 1;
+        width: 100px;   
+        height: 100px;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        opacity: 1;
+    }
+    100% {
+        width: 230px;
+        height: 220px;
+    }
+}
+
+@keyframes MainCloseAnims {
+    0% {
+        width: 230px;
+        height: 220px;
+        animation-timing-function: cubic-bezier(1,-0.2,1,1);
+    }
+    32% {
+        transform: translate(20px, -70px);
+        scale: 0.5;
+        width: 50px;
+        height: 50px;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-300px);
+        scale: 0.5;
+        width: 70px;
+        height: 70px;
+        border-radius: 1px;
+        opacity: 0;
+    }
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
